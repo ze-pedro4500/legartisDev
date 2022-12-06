@@ -1,0 +1,293 @@
+[ {
+  "id" : "157d0580-2e2c-8585-1403-35136bfa35a5",
+  "name" : "add_custom_id",
+  "display_width" : null,
+  "label" : "Add Custom Id",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "d39c40cc-31d6-ea3f-1daf-53eaefa52ceb",
+  "name" : "add_custome_code",
+  "display_width" : null,
+  "label" : "Add Custom Class",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "c3f6af28-548f-368a-ae6d-04ace6913d21",
+  "name" : "sec_background_color",
+  "display_width" : null,
+  "label" : "Section Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#F9F9F9",
+    "opacity" : 100
+  }
+}, {
+  "id" : "82f2802b-6644-cb29-44c4-39f78391b81e",
+  "name" : "main_title",
+  "display_width" : null,
+  "label" : "Main Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "6ecd7a3a-d67a-4800-ba12-31e5754f6aa9",
+  "name" : "box_group",
+  "display_width" : null,
+  "label" : "Box Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "bc699836-bf7a-430b-6ff9-0d7f42186e38",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "f6be671d-643b-46b8-2293-6e4a562a0fc8",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "For Legal Teams "
+  }, {
+    "id" : "5bb326c0-aff8-45d5-d385-de655fad3c61",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Unposed%20group%20of%20creative%20business%20people%20in%20an%20open%20concept%20office%20brainstorming%20their%20next%20project..jpeg",
+      "alt" : "Unposed group of creative business people in an open concept office brainstorming their next project.",
+      "loading" : "lazy",
+      "width" : 1000,
+      "height" : 667,
+      "max_width" : 1000,
+      "max_height" : 667
+    }
+  }, {
+    "id" : "bc699836-bf7a-430b-6ff9-0d7f42186e38",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Close that next deal and finalize the written agreement without the usual hassle. Legartis shows you in seconds what it takes to comply with your company's guidelines.</p>"
+  }, {
+    "id" : "047782bd-97b9-f887-c1d0-f3c16d18469e",
+    "name" : "button_group",
+    "display_width" : null,
+    "label" : "Button Group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "87575e33-8a5d-53aa-1c9e-8c45b131fd99",
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "5abbb96c-0655-f91f-1dfd-aff2da5f97c4",
+      "name" : "select_button",
+      "display_width" : null,
+      "label" : "Select Button",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "hub", "Hubspot CTA" ], [ "btn", "Normal Button" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "type" : "choice",
+      "default" : "btn"
+    }, {
+      "id" : "5293dc51-da9a-8193-0dd8-b483b7ba1861",
+      "name" : "select_button_style",
+      "display_width" : null,
+      "label" : "Select Button Style",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "theme", "Theme Button" ], [ "link", "Link Button" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "type" : "choice",
+      "default" : "link"
+    }, {
+      "id" : "782bf17a-01be-31ef-3ca0-8bf04cf0c638",
+      "name" : "hubspot_cta",
+      "display_width" : null,
+      "label" : "Hubspot CTA",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "5abbb96c-0655-f91f-1dfd-aff2da5f97c4",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "cta",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "cta"
+    }, {
+      "id" : "87575e33-8a5d-53aa-1c9e-8c45b131fd99",
+      "name" : "button_text",
+      "display_width" : null,
+      "label" : "Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Button Text"
+    }, {
+      "id" : "764e0a0f-d869-5ff5-e506-bc70fd0d1912",
+      "name" : "button_link",
+      "display_width" : null,
+      "label" : "Button Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "select_button" : "btn",
+      "select_button_style" : "link",
+      "button_text" : "Button Text",
+      "button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "title" : "For Legal Teams ",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Unposed%20group%20of%20creative%20business%20people%20in%20an%20open%20concept%20office%20brainstorming%20their%20next%20project..jpeg",
+      "alt" : "Unposed group of creative business people in an open concept office brainstorming their next project.",
+      "loading" : "lazy",
+      "width" : 1000,
+      "height" : 667,
+      "max_width" : 1000,
+      "max_height" : 667
+    },
+    "content" : "<p>Close that next deal and finalize the written agreement without the usual hassle. Legartis shows you in seconds what it takes to comply with your company's guidelines.</p>",
+    "button_group" : [ {
+      "select_button" : "btn",
+      "select_button_style" : "link",
+      "button_text" : "Button Text",
+      "button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }, {
+    "title" : "For Legal Teams ",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Unposed%20group%20of%20creative%20business%20people%20in%20an%20open%20concept%20office%20brainstorming%20their%20next%20project..jpeg",
+      "alt" : "Unposed group of creative business people in an open concept office brainstorming their next project.",
+      "loading" : "lazy",
+      "width" : 1000,
+      "height" : 667,
+      "max_width" : 1000,
+      "max_height" : 667
+    },
+    "content" : "<p>Close that next deal and finalize the written agreement without the usual hassle. Legartis shows you in seconds what it takes to comply with your company's guidelines.</p>",
+    "button_group" : [ {
+      "select_button" : "btn",
+      "select_button_style" : "link",
+      "button_text" : "Button Text",
+      "button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }, {
+    "title" : "For Legal Teams ",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Unposed%20group%20of%20creative%20business%20people%20in%20an%20open%20concept%20office%20brainstorming%20their%20next%20project..jpeg",
+      "alt" : "Unposed group of creative business people in an open concept office brainstorming their next project.",
+      "loading" : "lazy",
+      "width" : 1000,
+      "height" : 667,
+      "max_width" : 1000,
+      "max_height" : 667
+    },
+    "content" : "<p>Close that next deal and finalize the written agreement without the usual hassle. Legartis shows you in seconds what it takes to comply with your company's guidelines.</p>",
+    "button_group" : [ {
+      "select_button" : "btn",
+      "select_button_style" : "link",
+      "button_text" : "Button Text",
+      "button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  } ]
+} ]

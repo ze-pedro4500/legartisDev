@@ -1,0 +1,11 @@
+[ {
+  "id" : "5e69b8e3-803f-4360-cbd8-3fc555eef261",
+  "name" : "do_you_want_side_navigation_",
+  "display_width" : null,
+  "label" : "Do You Want Side Navigation ?",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : true
+} ]

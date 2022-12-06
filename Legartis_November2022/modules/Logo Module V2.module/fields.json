@@ -1,0 +1,305 @@
+[ {
+  "id" : "e92eae03-04ec-e3c1-6812-0d70249b306c",
+  "name" : "add_custom_id",
+  "display_width" : null,
+  "label" : "Add Custom Id",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "04dc639c-b7b1-028b-af74-a5d576273cea",
+  "name" : "add_custom_class",
+  "display_width" : null,
+  "label" : "Add Custom Class",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "c3f6af28-548f-368a-ae6d-04ace6913d21",
+  "name" : "sec_background_color",
+  "display_width" : null,
+  "label" : "Section Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#F9F9F9",
+    "opacity" : 100
+  }
+}, {
+  "id" : "6f0423a3-dc3f-3cb8-0a2f-e44f9da500ec",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Main Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Press/Media"
+}, {
+  "id" : "a4c4dc72-f476-ee89-af8d-5f1ee05f1945",
+  "name" : "add_slider",
+  "display_width" : null,
+  "label" : "Add Slider?",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "968b59b8-b2ed-202c-bb4e-5faaa6a6628f",
+  "name" : "column_choice",
+  "display_width" : null,
+  "label" : "Column Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "col-4", "Add Column 4" ], [ "col-5", "Add Column 5" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "type" : "choice",
+  "default" : "col-4"
+}, {
+  "id" : "6ecd7a3a-d67a-4800-ba12-31e5754f6aa9",
+  "name" : "box_group",
+  "display_width" : null,
+  "label" : "Box Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "5bb326c0-aff8-45d5-d385-de655fad3c61",
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "afe92d7f-b3d7-d395-d47d-b1427cf7c95c",
+    "name" : "logo_backfround_color",
+    "display_width" : null,
+    "label" : "Logo Backfround Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 66
+    }
+  }, {
+    "id" : "5bb326c0-aff8-45d5-d385-de655fad3c61",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    }
+  }, {
+    "id" : "3118f010-b8da-90ec-c1d5-7e11512aa286",
+    "name" : "logo_link",
+    "display_width" : null,
+    "label" : "Logo Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "logo_backfround_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 66
+    },
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "logo_backfround_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 66
+    },
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "logo_backfround_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 66
+    },
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "logo_backfround_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 66
+    },
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "logo_backfround_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 66
+    },
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "logo_backfround_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 66
+    },
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "8cdc7518-2cfa-f906-e52c-d27247a33fda",
+  "name" : "cta_text",
+  "display_width" : null,
+  "label" : "Load More CTA Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "968b59b8-b2ed-202c-bb4e-5faaa6a6628f",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "col-5",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+} ]

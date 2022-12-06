@@ -1,0 +1,55 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label:  Solutions - Legal Page
+-->
+
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+<main id="main-content" class="body-container-wrapper">
+  {% dnd_area 'dnd_area' class='body-container body-container--home solution-page legartis white-header', label='Main section' %}
+  
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Solution Banner Module.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %} 
+ 
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Solution Helps Your Business.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %} 
+  
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Solution Only Text And CTA Module.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %}   
+  
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Solutions Logo Slider.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %}
+ 
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Teams Module.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %}  
+  
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Solution Key Benefits Module.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %}  
+  
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Solution Only Text Module.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %} 
+  
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Solution Only Text And CTA Module.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %} 
+ 
+  {% end_dnd_area %}
+</main>
+{% endblock body %}

@@ -1,0 +1,69 @@
+<div class="countdown-sec" id="{{ module.add_custom_id }}">
+  <div class="container">
+    <div class="countdown-wp">
+      <div class="countdown">
+        <h5 id="headline"></h5>
+        <div id="countdown">
+          <ul>
+            <li><span id="days"></span>{{ module.days_label }}</li>
+            <li><span id="hours"></span>{{ module.hours_label }}</li>
+            <li><span id="minutes"></span>{{ module.minutes_label }}</li>
+            <li class="min"><span id="seconds"></span>{{ module.seconds_label }}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="inner-button {% if module.button_group.select_button_style == 'link'  %}link-button {% elif module.button_group.select_button_style == 'black'  %}theme-button2 {% else  module.button_group.select_button_style == 'theme'  %}theme-button{% endif %} ">
+        {% if module.button_group.select_button == 'hub'  %}
+        {% cta guid="{{ module.button_group.hubspot_cta }}" %}      
+        {% else module.select_button == 'btn'  %}
+        {% set href = module.button_group.button_link.url.href %}
+        {% if module.button_group.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if module.button_group.button_link.no_follow %}
+        {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if module.button_group.button_link.open_in_new_tab %}
+        {% do rel.append("noopener") %}
+        {% endif %}
+        <a href="{{ href }}"
+           {% if module.button_group.button_link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+           >
+          {{ module.button_group.button_text }}
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  (function () {
+    const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
+    let birthday = "{{ module.datetime_field|datetimeformat('%b %e, %Y %H:%M:%S') }}",
+    countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+      let now = new Date().getTime(),
+          distance = countDown - now;
+      document.getElementById("days").innerText = Math.floor(distance / (day)),
+        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+      //do something later when date is reached
+      if (distance < 0) {
+        let headline = document.getElementById("headline"),
+            countdown = document.getElementById("countdown"),
+            content = document.getElementById("content");
+        headline.innerText = "{{ module.countdown_after_message }}";
+        countdown.style.display = "none";
+        content.style.display = "block";
+        clearInterval(x);
+      }
+      //seconds
+    }, 0)
+  }());
+</script>

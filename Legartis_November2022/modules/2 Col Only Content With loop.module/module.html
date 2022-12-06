@@ -1,0 +1,10 @@
+<div class="two-col-conloop {{ module.add_custom_class }}" id="{{ module.add_custom_id }}" style="background-color:{{ module.section_background_color.color }};">
+  <div class="container">
+    <div class="two-col-conloop-wp display-flex">
+      {% for item in module.content %}
+      <div class="content">
+        {{ item }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>

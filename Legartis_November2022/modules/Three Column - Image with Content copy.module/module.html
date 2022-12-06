@@ -1,0 +1,51 @@
+<div class="media-appearance-sec  {{ module.add_custom_class }}" id="{{ module.add_custom_id }}" style="background-color:rgba({{ module.background_color.color|convert_rgb }},calc({{  module.background_color.opacity }}/100));">
+  <div class="container">
+    <div class="media-appearance-inner">
+      <div class="media-appearances-title">
+       <h3>
+         {{ module.title }}
+        </h3>  
+      </div>
+      <div class="media-appearances-wp display-flex">
+        {% for item in module.blog_group %}
+        <div class="outter">
+          <div class="inner">
+            <div class="image">
+              <img src="{{ item.blog_image.src }}" alt="{{ item.blog_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            </div>
+            <div class="detail">
+              <p class="tag">{{ item.tag }}</p>
+              <h4><a href="#" class="link">{{ item.blog_link }}</a></h4>
+              <div class="content">
+                {{ item.content }}
+              </div>
+              <div class="date"><p>{{ item.date }}</p></div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% if module.bottom_button.text_field %}
+      <div class="theme-button2">
+        {% set href = module.bottom_button.link_field.url.href %}
+        {% if module.bottom_button.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if module.bottom_button.link_field.no_follow %}
+        {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if module.bottom_button.link_field.open_in_new_tab %}
+        {% do rel.append("noopener") %}
+        {% endif %}
+        <a href="{{ href }}" id="loadMore"
+           {% if module.bottom_button.link_field.open_in_new_tab %}target="_blank"{% endif %}
+           {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+           >
+          {{ module.bottom_button.text_field }}
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

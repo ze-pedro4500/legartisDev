@@ -1,0 +1,96 @@
+[ {
+  "id" : "654f8a4a-00f9-60b5-0e6f-50046947770e",
+  "name" : "add_custom_id",
+  "display_width" : null,
+  "label" : "Add Custom Id",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "c3f6af28-548f-368a-ae6d-04ace6913d21",
+  "name" : "sec_background_color",
+  "display_width" : null,
+  "label" : "Section Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#F9F9F9",
+    "opacity" : 100
+  }
+}, {
+  "id" : "61b6e1b0-1163-5b45-0637-e78c13452759",
+  "name" : "logo_image",
+  "display_width" : null,
+  "label" : "Logo Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/daimler2.png",
+    "alt" : "daimler2",
+    "loading" : "lazy",
+    "width" : 177,
+    "height" : 22,
+    "max_width" : 177,
+    "max_height" : 22
+  }
+}, {
+  "id" : "bc699836-bf7a-430b-6ff9-0d7f42186e38",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<div class=\"comment\">\n<p>The Legartis solution supports Daimler in optimising its legal processes and helps to make its contract review process more efficient.</p>\n</div>\n<p>Pietro Brambilla, Head of Digital Transformation, Integrity and Legal Affairs, Daimler AG</p>"
+}, {
+  "id" : "8a159ee4-87d0-4153-3737-016e6898805d",
+  "name" : "left_image",
+  "display_width" : null,
+  "label" : "Left Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/diclimer_left.png",
+    "alt" : "diclimer_left",
+    "loading" : "lazy",
+    "width" : 314,
+    "height" : 368,
+    "max_width" : 314,
+    "max_height" : 368
+  }
+}, {
+  "id" : "de8c0491-dabe-6b8a-e5aa-645d400acbfc",
+  "name" : "right_image",
+  "display_width" : null,
+  "label" : "Right Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/diclimer_Right.png",
+    "alt" : "diclimer_Right",
+    "loading" : "lazy",
+    "width" : 389,
+    "height" : 457,
+    "max_width" : 389,
+    "max_height" : 457
+  }
+} ]

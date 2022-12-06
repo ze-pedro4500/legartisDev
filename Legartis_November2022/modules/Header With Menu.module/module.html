@@ -1,0 +1,89 @@
+<div class="header-sec">
+  <div class="container">
+    <div class="outter-header display-flex">
+      <div class="header-logo">
+        {% set href = module.logo_link.url.href %}
+        {% if module.logo_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if module.logo_link.no_follow %}
+        {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if module.logo_link.open_in_new_tab %}
+        {% do rel.append("noopener") %}
+        {% endif %}
+        <a href="{{ href }}"
+           {% if module.logo_link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+           >
+
+          {% if module.image.src %}
+          {% set sizeAttrs = 'width="{{ module.image.width }}" height="{{ module.image.height }}"' %}
+          {% if module.image.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.image.max_width }}" height="{{ module.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.image.loading != 'disabled' ? 'loading="{{ module.image.loading }}"' : '' %}
+          <img src="{{ module.image.src }}" alt="{{ module.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="white-logo" > 
+          {% endif %}
+
+          <img src="https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/LegartisLogo-blue%20.png" class="blue-logo" style="max-width: 100%; height: auto;">
+
+
+        </a>
+      </div>
+      <div class="menu enumenu_ul">
+        {% menu id="{{ module.menu_field }}" %}
+      </div>
+      <div class="language-switch">
+
+
+      </div>
+
+      <div class="outter-button header-button">
+        {% for item in module.button_group %}
+        <div class="inner-button  {% if item.select_button_style == 'link'  %}link-button{% else  item.select_button_style == 'theme'  %}theme-button{% endif %} ">
+          {% if item.select_button == 'hub'  %}
+          {% cta guid="{{ item.hubspot_cta }}" %}      
+          {% else item.select_button == 'btn'  %}
+          {% set href = item.button_link.url.href %}
+          {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% set rel = [] %}
+          {% if item.button_link.no_follow %}
+          {% do rel.append("nofollow") %}
+          {% endif %}
+          {% if item.button_link.open_in_new_tab %}
+          {% do rel.append("noopener") %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %}
+             {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+             >
+            {{ item.button_text }}
+          </a>
+          {% endif %}
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  $(document).ready(function() {
+    //$('input,textarea').placeholder();
+    $('.enumenu_ul').responsiveMenu({
+      'menuIcon_text': 'Menu',
+      onMenuopen: function() {}
+    });
+
+  });
+</script>
+
+

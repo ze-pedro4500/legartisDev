@@ -1,0 +1,79 @@
+[ {
+  "id" : "d0d86224-87d9-0e7c-d4a4-a0fb4dca495b",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#F9F9F9",
+    "opacity" : 100
+  }
+}, {
+  "id" : "5853d0f7-8076-d70e-b037-2b7c7c2fc226",
+  "name" : "content_text",
+  "display_width" : null,
+  "label" : "Content Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>STAY UP TO DATE WITH OUR WEBINARS</h2>\n<p>Reap the benefits of automated contract review. Using artificial intelligence, Legartis automates the analysis and review of incoming contracts and speeds up the contract process for all departments, be they Sales, Procurement or the Legal Department. efficient cooperation between all parties – from the legal department and sales to procurement. Close contracts in hours instead of weeks. Legartis shortens response times by providing immediate insight into topics in need of negotiation.</p>"
+}, {
+  "id" : "cbe913bc-5b42-2074-52a1-244489f03ec0",
+  "name" : "heading_text_color",
+  "display_width" : null,
+  "label" : "Heading Text color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#060606",
+    "opacity" : 100
+  }
+}, {
+  "id" : "ef96a6e1-f2a6-41b4-2615-6dd892385634",
+  "name" : "heading_color",
+  "display_width" : null,
+  "label" : "Heading Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#060606",
+    "opacity" : 100
+  }
+}, {
+  "id" : "cea65e8c-998c-c928-8808-f41846db8b5b",
+  "name" : "text_color",
+  "display_width" : null,
+  "label" : "Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#6A6A6A",
+    "opacity" : 100
+  }
+}, {
+  "id" : "5d462fcd-3d63-6df6-5c79-6a4f2d138246",
+  "name" : "green_shape_",
+  "display_width" : null,
+  "label" : "Green shape ",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.legartis.ai/hubfs/Legartis%20Webinar%20Wireframe/Mask%20Group%208.png",
+    "alt" : "Mask Group 8",
+    "loading" : "lazy",
+    "width" : 689,
+    "height" : 509,
+    "max_width" : 689,
+    "max_height" : 509
+  }
+} ]

@@ -1,0 +1,105 @@
+[ {
+  "id" : "f38aaa02-0cb5-d25e-f734-9a46e774abb4",
+  "name" : "add_custom_id",
+  "display_width" : null,
+  "label" : "Add Custom Id",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "c3f6af28-548f-368a-ae6d-04ace6913d21",
+  "name" : "sec_background_color",
+  "display_width" : null,
+  "label" : "Section Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#F9F9F9",
+    "opacity" : 100
+  }
+}, {
+  "id" : "605a5d4d-7c31-6474-30e4-8bf20af2c98f",
+  "name" : "main_title",
+  "display_width" : null,
+  "label" : "Main Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Multidisciplinary team-builders"
+}, {
+  "id" : "643f1795-9466-83b5-e3f3-5f8caa1af17c",
+  "name" : "address_group",
+  "display_width" : null,
+  "label" : "Address Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "07b12d95-d5c7-34a3-1a4d-69e42701edac",
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "07b12d95-d5c7-34a3-1a4d-69e42701edac",
+    "name" : "label_text",
+    "display_width" : null,
+    "label" : "Label Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Legartis Zurich"
+  }, {
+    "id" : "dc0d5a27-3fb4-f100-a3a5-a47e60a9111a",
+    "name" : "label_content",
+    "display_width" : null,
+    "label" : "Label Content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "label_text" : "Legartis Zurich",
+    "label_content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }, {
+    "label_text" : "Legartis Zurich",
+    "label_content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  } ]
+}, {
+  "id" : "5bb326c0-aff8-45d5-d385-de655fad3c61",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/map.png",
+    "alt" : "map",
+    "loading" : "lazy",
+    "width" : 532,
+    "height" : 403,
+    "max_width" : 532,
+    "max_height" : 403
+  }
+} ]

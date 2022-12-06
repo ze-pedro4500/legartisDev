@@ -1,0 +1,24 @@
+<div class="map-two-col-sec" id="{{ module.add_custom_id }}" style="background-color:rgba({{ module.sec_background_color.color|convert_rgb }},calc({{  module.sec_background_color.opacity }}/100));">
+  <div class="container">
+    <div class="map-two-col-wp display-flex">
+      <div class="map-content">
+        <div class="inner-map-content">
+           <h2>
+             {{ module.main_title }}
+          </h2>
+       <div class="map-address">
+         {% for item in module.address_group %}
+         <div class="inner">
+           <h4>{{ item.label_text }}</h4>
+           <p>{{ item.label_content }}</p>
+         </div>
+         {% endfor %}
+        </div>
+        </div>     
+      </div>
+      <div class="map-image">
+        <img src="{{ module.image.src }}" alt="{{ module.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      </div>
+    </div>
+  </div>
+</div>

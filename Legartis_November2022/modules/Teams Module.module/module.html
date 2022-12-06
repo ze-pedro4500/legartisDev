@@ -1,0 +1,66 @@
+<div class="teams-sec {{ module.add_custome_code }}" id="{{ module.add_custom_id }}" style="background-color:{{ module.sec_background_color.color }};">
+  <div class="container">
+    {% if module.main_title %}
+    <div class="main-title-team-sec">
+      <h3>
+        {{ module.main_title }}
+      </h3>   
+    </div>
+     {% endif %}
+    <div class="outter-team display-flex">
+      {% for item in module.box_group %}
+      <div class="team-box">
+       {% if item.title %}
+        <h4>{{ item.title }} </h4>
+        {% endif %}
+        <div class="team-img">
+          {% if item.image.src %}
+          {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}"' %}
+          {% if item.image.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif item.image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.image.max_width }}" height="{{ item.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = item.image.loading != 'disabled' ? 'loading="{{ item.image.loading }}"' : '' %}
+          <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <div class="team-info">
+          <div class="inner-team-info">
+            <div class="team-content">
+            {{ item.content }}
+          </div>
+          <div class="outter-button">
+            {% for item2 in item.button_group %}
+            <div class="inner-button  {% if item2.select_button_style == 'link'  %}link-button{% else  item2.select_button_style == 'theme'  %}theme-button{% endif %} ">
+              {% if item2.select_button == 'hub'  %}
+              {% cta guid="{{ item2.hubspot_cta }}" %}      
+              {% else item2.select_button == 'btn'  %}
+              {% set href = item2.button_link.url.href %}
+              {% if item2.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              {% set rel = [] %}
+              {% if item2.button_link.no_follow %}
+              {% do rel.append("nofollow") %}
+              {% endif %}
+              {% if item2.button_link.open_in_new_tab %}
+              {% do rel.append("noopener") %}
+              {% endif %}
+              <a href="{{ href }}"
+                 {% if item2.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                 >
+                {{ item2.button_text }}
+              </a>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

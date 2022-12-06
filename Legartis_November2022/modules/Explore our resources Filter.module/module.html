@@ -1,0 +1,211 @@
+{% if module.remove_filter_functionality == false %}
+<script src="https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/js/mixitup.min.js"></script> 
+<script src="https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/js/loadmore.js"></script> 
+{% endif %}
+<div class="exp-res-sec {{ module.add_custom_class }}" id="{{ module.add_custom_id }}" style="background-color:rgba({{ module.background_color.color|convert_rgb }},calc({{  module.background_color.opacity }}/100));">
+  <div class="container">
+    <div class="exp-res-title">
+      <h3>
+        {{ module.main_title }}
+      </h3>
+    </div>
+    <div class="exp-res-filter">  
+      {% if module.remove_filter_functionality == false %}
+      <div class="filter-controls">
+        <a href="javascript:void(0)" class="filter filter1 all" data-filter="all" >{{ module.all_resources_label }}</a>
+        {% for item in module.filter_group %}
+        {% for item2 in item.topic %}
+        <a href="javascript:void(0)" class="filter efilt-option filter1" style="display:none;" data-filter=".{{ item2|lower|replace(' ','') }}">{{ item2 }}</a>
+        {% endfor %}
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% if module.remove_filter_functionality == false %}
+      <div class="filter-box" id="mix-container">
+        {% for item in module.filter_group %}
+        <div class="outter mix st-add-iteam-fill  {% for item2 in item.topic %} {{ item2|lower|replace(' ','') }} {% endfor %} " >
+          <div class="inner">
+            <div class="image">
+              <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            </div>
+            <div class="bottom">
+              <div class="topic">
+                <ul>
+                  {% for item2 in item.topic %}
+                  <li>{{ item2 }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div class="content">
+                {{ item.content }}
+              </div>
+              <div class="link">
+                {% set href = item.link_with_text.link_field.url.href %}
+                {% if item.link_with_text.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                {% set rel = [] %}
+                {% if item.link_with_text.link_field.no_follow %}
+                {% do rel.append("nofollow") %}
+                {% endif %}
+                {% if item.link_with_text.link_field.open_in_new_tab %}
+                {% do rel.append("noopener") %}
+                {% endif %}
+                <a href="{{ href }}"
+                   {% if item.link_with_text.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                   >
+                  {{ item.link_with_text.text_field }} <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="filter-box" >
+        {% for item in module.filter_group %}
+        <div class="outter">
+          <div class="inner">
+            <div class="image">
+              <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            </div>
+            <div class="bottom">
+              <div class="topic">
+                <ul>
+                  {% for item2 in item.topic %}
+                  <li>{{ item2 }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div class="content">
+                {{ item.content }}
+              </div>
+              <div class="link">
+                {% set href = item.link_with_text.link_field.url.href %}
+                {% if item.link_with_text.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                {% set rel = [] %}
+                {% if item.link_with_text.link_field.no_follow %}
+                {% do rel.append("nofollow") %}
+                {% endif %}
+                {% if item.link_with_text.link_field.open_in_new_tab %}
+                {% do rel.append("noopener") %}
+                {% endif %}
+                <a href="{{ href }}"
+                   {% if item.link_with_text.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                   >
+                  {{ item.link_with_text.text_field }} <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% if module.remove_filter_functionality == false %}
+      <div class="loadmore text-center postloadMore "><br></div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% if module.remove_filter_functionality == false %}
+<script>
+  $(function() {
+    var seen = {};
+    $('.exp-res-filter .filter-controls a').each(function() {
+      var txt = $(this).text();
+      if (seen[txt])
+        $(this).remove();
+
+      else
+        seen[txt] = true;
+    });
+  });
+  var mylist = $('.filter-controls');
+  var listitems = mylist.children('a').get();
+  listitems.sort(function(a, b) {
+    return $(a).text().toUpperCase().localeCompare($(b).text().toUpperCase());
+  })
+  $.each(listitems, function(idx, itm) { mylist.append(itm); });
+
+
+  //   filter Function
+  $("#mix-container").mixItUp({
+    controls: {
+      enable: true
+    },
+
+    loadmore: {
+      initial: 6,
+      loadMore:6,
+      buttonWrapper: ".blog-paginations",
+      buttonClass: "loadmore-button btn-1",
+      buttonLabel: "View more",
+    },
+    selectors: {
+      control: '.mixitup-control',
+      target: ".st-add-iteam-fill",
+      filter: 'a.filter1'// As in mixitup
+    },
+    callbacks: {
+      onMixLoad: function(state) {
+        var total = state.$targets.length;
+        console.log(total)
+         if (total <= 6) {
+           $('.postloadMore .loadmore-button').attr('disabled','disabled')
+        }
+      }
+    }
+  });
+  $('.exp-res-filter').find('.filter.efilt-option').click(function(){
+    refresh_load_button()
+    setTimeout(function(){
+      //debugger;
+      if($('.st-add-iteam-fill:visible').length <= 11){
+
+        $('.postloadMore .loadmore-button').hide()
+      }
+      else{
+        $('.postloadMore .loadmore-button').show()
+      }
+      $(this).addClass('active');
+      console.log('run my coddrfe');
+      $('.loadmore-button').click(function(){
+        setTimeout(function(){
+          var active_data_filter = $('.exp-res-filter').find('.filter.active').data('filter');
+          if($('#mix-container').find(active_data_filter+':hidden').length > 0){
+            $('.loadmore-button').show();
+          }else{
+            $('.loadmore-button').hide();
+          }
+        },500);
+        refresh_load_button()
+      });
+    },800);
+  });
+
+  function refresh_load_button(){
+    $('.loadmore-button').click(function(){
+      setTimeout(function(){
+        var active_data_filter = $('.exp-res-filter').find('.filter.active').data('filter');
+        if($('#mix-container').find(active_data_filter+':hidden').length > 0){
+          $('.loadmore-button').show();
+        }else{
+          $('.loadmore-button').hide();
+        }
+        refresh_load_button();
+      },500);
+
+    });
+  }
+
+  $(window).load(function(){
+    $('.exp-res-filter .filter-controls a').show();
+  });
+</script>
+{% endif %}

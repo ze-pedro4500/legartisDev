@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 92155576733,
+  "label" : "Solution 2 Column - Content Module",
+  "is_available_for_new_content" : true
+}

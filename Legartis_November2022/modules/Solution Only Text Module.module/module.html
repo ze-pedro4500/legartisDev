@@ -1,0 +1,25 @@
+<div class="solution-text-only" id="{{ module.add_custom_id }}" style="background-color:rgba({{ module.sec_background_color.color|convert_rgb }},calc({{  module.sec_background_color.opacity }}/100));">
+  <div class="container">
+    <div class="outter-sol-text-only">
+      <div class="sol-text-only-img">
+        {% if module.logo_image.src %}
+        {% set sizeAttrs = 'width="{{ module.logo_image.width }}" height="{{ module.logo_image.height }}"' %}
+        {% if module.logo_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif module.logo_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.logo_image.max_width }}" height="{{ module.logo_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.logo_image.loading != 'disabled' ? 'loading="{{ module.logo_image.loading }}"' : '' %}
+        <img src="{{ module.logo_image.src }}" alt="{{ module.logo_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <div class="sol-text-only-content">
+        {{ module.content }}
+      </div>  
+    </div>
+  </div>
+</div>
+<style>
+  .solution-text-only:before { background-image: url('{{ module.left_image.src }}'); } 
+  .solution-text-only:after { background-image: url('{{ module.right_image.src }}'); }
+</style>

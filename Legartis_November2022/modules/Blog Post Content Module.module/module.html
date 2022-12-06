@@ -1,0 +1,101 @@
+<div class="blog-post-content leg-blog-post-con  {% if module.do_you_want_side_navigation_ %}blog-post-with-side-nav{% endif %}">
+
+    <div class="blog-inner-post-box display-flex">
+       {% if module.do_you_want_side_navigation_ %}
+        <div class="outter-blog-sider-bar">
+            <div class="blog-sider-bar-nav">      
+            </div>
+        </div> 
+         {% endif %}
+        <div class="blog-post-content-box">
+            {{ content.post_body }}
+        </div>       
+    </div>
+    {% if content.tag_list %}
+    <div class="blog-tags">
+        {% for tag in content.tag_list %}
+        <a class="blog-tag-link" href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>{% if not loop.last %},{% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}    
+</div>
+
+<script>
+    $(function(){
+        $('.blog-post-content-box h2').each(function(i,value){
+
+            let ctaItems = $(value).find('.hs-cta-wrapper').html();
+            ctaItems ?  $(this).before(`<p>${ctaItems}</p>`) :$(this).before(``) ;
+
+            $(this).find('.hs-cta-wrapper').hide();
+
+            if ($(this).is(':empty')){
+
+            }else{
+                if($(this).text()!==" "){
+
+                    let items = $(this).text().split("});");
+                    let newContent = items[items.length - 1].trim();
+                    //           $('.blog-sider-bar-nav').append('<h2 nah2="loop'+i+'">'+$(this).text()+'</h2>');
+                    $('.blog-sider-bar-nav').append('<h2 nah2="loop'+i+'">'+newContent+'</h2>');
+                    $(this).attr('dah2','loop'+ i);
+                }  
+            }
+
+            var cloned_h3=$(this).nextUntil("h2").filter('h3').filter(function(){
+                return $(this).text() !== " ";
+            });
+
+            $.each(cloned_h3,function(key,value){
+
+                let ctaItems1 = $(value).find('.hs-cta-wrapper').html();
+                ctaItems1 ?  $(this).before(`<p>${ctaItems1}</p>`) :$(this).before(``) ;
+                $(this).find('.hs-cta-wrapper').hide();
+
+                if ($(this).is(':empty')){
+
+                }else{ 
+                    if($(this).text()!=""){
+                        $(this).attr('dah3','loop'+i+'-'+key);
+                        let heading3items = $(this).text().split("});");
+                        let heading3Content = heading3items[heading3items.length - 1].trim();
+                        $('.blog-sider-bar-nav').append('<h3 nah3="loop'+i+'-'+key+'">'+heading3Content+'</h3>');
+                        //             $('.blog-sider-bar-nav').append('<h3 nah3="loop'+i+'-'+key+'">'+$(this).text()+'</h3>');
+
+                    }
+
+                }
+
+            });
+
+        }); 
+
+        $('.blog-sider-bar-nav h2').each(function(){
+            $(this).nextUntil('h2').andSelf().wrapAll('<div class="foldOutItem" />');
+            $(this).nextAll().wrapAll('<div class="foldOutItemContent" />')
+                .end().wrap('<div class="foldOutItemTitle" />');
+        });
+
+
+        $('.close-icon').click(function(){
+            $(this).toggleClass('active');
+            $('.blog-sider-bar-nav').toggle(300);
+        });
+
+        $('body').on('click','.blog-sider-bar-nav h2',function(){
+            var nah2 = $(this).attr('nah2');
+            $('html, body').animate({
+                scrollTop: $('.blog-post-content-box h2[dah2='+ nah2 +']').offset().top
+            }, 1000);
+        });
+
+        $('body').on('click','.blog-sider-bar-nav h3',function(){
+            var nah3 = $(this).attr('nah3');
+            $('html, body').animate({
+                scrollTop: $('.blog-post-content-box h3[dah3='+ nah3 +']').offset().top
+            }, 1000);
+        });
+
+
+    })
+</script>

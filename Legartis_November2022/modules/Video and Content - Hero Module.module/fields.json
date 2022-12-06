@@ -1,0 +1,260 @@
+[ {
+  "id" : "3526c0e7-7c18-d853-2e58-b4c30d3400f1",
+  "name" : "add_custom_id",
+  "display_width" : null,
+  "label" : "Add Custom Id",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "c3f6af28-548f-368a-ae6d-04ace6913d21",
+  "name" : "sec_background_color",
+  "display_width" : null,
+  "label" : "Section Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#fff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "85f569a3-de73-c496-afd4-0c682d1f2e54",
+  "name" : "select_video",
+  "display_width" : null,
+  "label" : "Select Video",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "hub", "Hubspot Video" ], [ "code", "Embed Code" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "type" : "choice",
+  "default" : "code"
+}, {
+  "id" : "5dd4588f-2fdd-83aa-59f9-0a2accbca7b5",
+  "name" : "videoplayer_field",
+  "display_width" : null,
+  "label" : "Video",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "85f569a3-de73-c496-afd4-0c682d1f2e54",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "hub",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "resizable" : true,
+  "show_preview" : true,
+  "show_advanced_options" : false,
+  "type" : "videoplayer",
+  "default" : {
+    "player_id" : 42892042783,
+    "height" : 1808,
+    "width" : 3310
+  }
+}, {
+  "id" : "be336ea3-27fb-eba9-3d55-7c9c45aba5e9",
+  "name" : "embed_field",
+  "display_width" : null,
+  "label" : "Embed",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "85f569a3-de73-c496-afd4-0c682d1f2e54",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "code",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "supported_source_types" : [ "oembed", "html" ],
+  "supported_oembed_types" : [ "photo", "video", "link", "rich" ],
+  "resizable" : true,
+  "show_preview" : true,
+  "supported_media_bridge_providers" : [ ],
+  "type" : "embed",
+  "default" : {
+    "source_type" : "oembed",
+    "oembed_url" : "https://youtu.be/6N9efOgvT5k",
+    "oembed_response" : {
+      "type" : "video",
+      "version" : "1.0",
+      "html" : "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/6N9efOgvT5k?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+      "title" : "Introducing the Legartis Solution -  identify, classify and understand contracts within seconds",
+      "author_name" : "Legartis",
+      "author_url" : "https://www.youtube.com/channel/UCLbJYS53HOW-SN-TBB_4g6Q",
+      "provider_name" : "YouTube",
+      "provider_url" : "https://www.youtube.com/",
+      "thumbnail_url" : "https://i.ytimg.com/vi/6N9efOgvT5k/hqdefault.jpg",
+      "thumbnail_width" : "480",
+      "thumbnail_height" : "360",
+      "height" : "113",
+      "width" : "200"
+    },
+    "width" : 200,
+    "height" : 113,
+    "size_type" : "auto",
+    "max_width" : 200,
+    "max_height" : 113
+  }
+}, {
+  "id" : "bc699836-bf7a-430b-6ff9-0d7f42186e38",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h1>Artificial Intelligence for Unlimited Scalability in Contract Review</h1>\n<p>Legartis is a multi-award winning LegalTech solution that automates contract review. Ready to use from day one, Legartis combines artificial intelligence with an excellent user experience. This makes contract review scalable and ensures consistent adherence to your corporate policies for the purposes of compliance.</p>"
+}, {
+  "id" : "047782bd-97b9-f887-c1d0-f3c16d18469e",
+  "name" : "button_group",
+  "display_width" : null,
+  "label" : "Button Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "87575e33-8a5d-53aa-1c9e-8c45b131fd99",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "5abbb96c-0655-f91f-1dfd-aff2da5f97c4",
+    "name" : "select_button",
+    "display_width" : null,
+    "label" : "Select Button",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "hub", "Hubspot CTA" ], [ "btn", "Normal Button" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "type" : "choice",
+    "default" : "btn"
+  }, {
+    "id" : "5293dc51-da9a-8193-0dd8-b483b7ba1861",
+    "name" : "select_button_style",
+    "display_width" : null,
+    "label" : "Select Button Style",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "theme", "Theme Button" ], [ "link", "Link Button" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "type" : "choice",
+    "default" : "theme"
+  }, {
+    "id" : "782bf17a-01be-31ef-3ca0-8bf04cf0c638",
+    "name" : "hubspot_cta",
+    "display_width" : null,
+    "label" : "Hubspot CTA",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "5abbb96c-0655-f91f-1dfd-aff2da5f97c4",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "cta",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "cta"
+  }, {
+    "id" : "87575e33-8a5d-53aa-1c9e-8c45b131fd99",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Request Demo Now"
+  }, {
+    "id" : "764e0a0f-d869-5ff5-e506-bc70fd0d1912",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "select_button" : "btn",
+    "select_button_style" : "theme",
+    "button_text" : "Request Demo Now",
+    "button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "a6d8b7f8-9feb-ba92-d6e5-ab45f2fd5ec8",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Left Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Logo%20element.png",
+    "alt" : "Logo element",
+    "width" : 810,
+    "height" : 811,
+    "max_width" : 810,
+    "max_height" : 811
+  }
+}, {
+  "id" : "a434c9ec-5f8b-7057-2b24-b54601832a84",
+  "name" : "background_right_image",
+  "display_width" : null,
+  "label" : "Background Right Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/Header%20Background%202.png",
+    "alt" : "Header Background 2",
+    "width" : 500,
+    "height" : 587,
+    "max_width" : 500,
+    "max_height" : 587
+  }
+} ]

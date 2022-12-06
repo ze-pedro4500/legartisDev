@@ -1,0 +1,75 @@
+<div class="product-two-col-sec {{ module.add_custom_class }}" id="{{ module.add_custom_id }}" style="background-color:rgba({{ module.sec_background_color.color|convert_rgb }},calc({{  module.sec_background_color.opacity }}/100));">
+  <div class="container">
+    <div class="outter-product-two-col">
+      {% if module.main_title %}
+      <div class="pro-two-col-main-title">
+        {{ module.main_title }}
+      </div>
+      {% endif %}   
+      <div class="inner-product-two-col">    
+        {% for item in module.box_group %}
+        <div class="product-two-col-box display-flex {% if module.swap_two_column %}{% cycle 'even','odd' %}{% else %}{% cycle 'odd','even' %}{% endif %}" style="padding:{{ item.padding_top_bottom }}px 0;">
+          <div class="product-two-col-img {{ item.sub_icon_set }}" id="product-two-col-img{{loop.index}}">
+            
+            
+            
+            {% if item.do_you_want_animated_svg %}
+            <object type="image/svg+xml" data="{{ item.image.src }}"></object>
+            
+              {% else %}           
+
+            {% if item.image.src %}
+            {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}"' %}
+            {% if item.image.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif item.image.size_type == 'auto_custom_max' %} 
+            {% set sizeAttrs = 'width="{{ item.image.max_width }}" height="{{ item.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.image.loading != 'disabled' ? 'loading="{{ item.image.loading }}"' : '' %}
+            <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+            {% endif %}
+            <style>
+              #product-two-col-img{{loop.index}}.product-two-col-img:before{background-image: url({{ item.background_image.src }});  }
+            </style>
+          </div>
+          <div class="product-two-col-content">
+            <div class="inner-product-two-col-content">
+              {{ item.content }}
+              {% for item2 in item.button_group %}
+              <div class="inner-button  {% if item2.select_button_style == 'link'  %}link-button {% elif item2.select_button_style == 'black'  %}theme-button2 {% else  item2.select_button_style == 'theme'  %}theme-button{% endif %} ">
+                {% if item2.select_button == 'hub'  %}
+                {% if item2.hubspot_cta  %}
+                {% cta guid="{{ item2.hubspot_cta }}" %} 
+                {% endif %}
+                {% else item2.select_button == 'btn'  %}
+                {% set href = item2.button_link.url.href %}
+                {% if item2.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                {% set rel = [] %}
+                {% if item2.button_link.no_follow %}
+                {% do rel.append("nofollow") %}
+                {% endif %}
+                {% if item2.button_link.open_in_new_tab %}
+                {% do rel.append("noopener") %}
+                {% endif %}
+                {% if item2.button_text  %}
+                <a href="{{ href }}"
+                   {% if item2.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                   >
+                  {{ item2.button_text }}
+                </a>
+                {% endif %}
+                {% endif %}
+              </div>
+              {% endfor %}
+            </div>  
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

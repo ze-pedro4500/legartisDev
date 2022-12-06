@@ -1,0 +1,144 @@
+[ {
+  "id" : "e2212ae6-0106-369d-3fd7-3c0a1d9ee5f3",
+  "name" : "add_custom_id",
+  "display_width" : null,
+  "label" : "Add Custom Id",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "c3f6af28-548f-368a-ae6d-04ace6913d21",
+  "name" : "sec_background_color",
+  "display_width" : null,
+  "label" : "Section Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#F9F9F9",
+    "opacity" : 100
+  }
+}, {
+  "id" : "60294ad9-8cca-8584-5e11-4ae9b9ceddfb",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "use cases"
+}, {
+  "id" : "92ac084a-9764-2e65-d928-ad172ee2a7b9",
+  "name" : "slider_group",
+  "display_width" : null,
+  "label" : "Slider Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "bc699836-bf7a-430b-6ff9-0d7f42186e38",
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "5bb326c0-aff8-45d5-d385-de655fad3c61",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/3%20illustration%20png.png",
+      "alt" : "3 illustration png",
+      "loading" : "lazy",
+      "width" : 641,
+      "height" : 715,
+      "max_width" : 641,
+      "max_height" : 715
+    }
+  }, {
+    "id" : "bc699836-bf7a-430b-6ff9-0d7f42186e38",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h2>Artificial Intelligence for Your Legal Department</h2>\n<p>Legartis enables you to digitalise contract review and automate recurring tasks in your legal department. This is all underpinned by state-of-the-art developments in artificial intelligence.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/3%20illustration%20png.png",
+      "alt" : "3 illustration png",
+      "loading" : "lazy",
+      "width" : 641,
+      "height" : 715,
+      "max_width" : 641,
+      "max_height" : 715
+    },
+    "content" : "<h2>Artificial Intelligence for Your Legal Department</h2>\n<p>Legartis enables you to digitalise contract review and automate recurring tasks in your legal department. This is all underpinned by state-of-the-art developments in artificial intelligence.</p>"
+  }, {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/3%20illustration%20png.png",
+      "alt" : "3 illustration png",
+      "loading" : "lazy",
+      "width" : 641,
+      "height" : 715,
+      "max_width" : 641,
+      "max_height" : 715
+    },
+    "content" : "<h2>Artificial Intelligence for Your Legal Department</h2>\n<p>Legartis enables you to digitalise contract review and automate recurring tasks in your legal department. This is all underpinned by state-of-the-art developments in artificial intelligence.</p>"
+  }, {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/3%20illustration%20png.png",
+      "alt" : "3 illustration png",
+      "loading" : "lazy",
+      "width" : 641,
+      "height" : 715,
+      "max_width" : 641,
+      "max_height" : 715
+    },
+    "content" : "<h2>Artificial Intelligence for Your Legal Department</h2>\n<p>Legartis enables you to digitalise contract review and automate recurring tasks in your legal department. This is all underpinned by state-of-the-art developments in artificial intelligence.</p>"
+  }, {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/3%20illustration%20png.png",
+      "alt" : "3 illustration png",
+      "loading" : "lazy",
+      "width" : 641,
+      "height" : 715,
+      "max_width" : 641,
+      "max_height" : 715
+    },
+    "content" : "<h2>Artificial Intelligence for Your Legal Department</h2>\n<p>Legartis enables you to digitalise contract review and automate recurring tasks in your legal department. This is all underpinned by state-of-the-art developments in artificial intelligence.</p>"
+  }, {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/3%20illustration%20png.png",
+      "alt" : "3 illustration png",
+      "loading" : "lazy",
+      "width" : 641,
+      "height" : 715,
+      "max_width" : 641,
+      "max_height" : 715
+    },
+    "content" : "<h2>Artificial Intelligence for Your Legal Department</h2>\n<p>Legartis enables you to digitalise contract review and automate recurring tasks in your legal department. This is all underpinned by state-of-the-art developments in artificial intelligence.</p>"
+  } ]
+} ]

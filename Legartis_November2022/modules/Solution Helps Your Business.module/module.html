@@ -1,0 +1,21 @@
+<div class="solution-help-sec" id="{{ module.add_custom_id }}" style="background-color:rgba({{ module.sec_background_color.color|convert_rgb }},calc({{  module.sec_background_color.opacity }}/100));">
+  <div class="container">
+    <div class="outter-sol-help">
+      <div class="sol-help-title">
+        <h3>{{ module.main_title }} </h3>
+      </div>
+      <div class="inner-sol-help display-flex">
+        {% for item in module.box_group %}
+        <div class="sol-help-box help-box-{{ loop.index }} {% if item.select_image_position_ == "rb" %}right_bottom{% elif item.select_image_position_ == "rt" %}right_top{% elif item.select_image_position_ == "lb" %}left-bottom{% elif item.select_image_position_ == "lt" %}left-top{% endif %}">
+          {{ item.content }}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<style> 
+  {% for item in module.box_group %}
+  .help-box-{{ loop.index }}:after { background-image: url('{{ item.image.src }}'); }
+    {% endfor %}
+</style>

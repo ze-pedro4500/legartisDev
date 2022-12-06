@@ -1,0 +1,12 @@
+defaultPortal: zepedro
+portals:
+  - name: zepedro
+    portalId: 23461626
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CIPjncLOMBILAA0AAAAA4A0AQAIY-v2XCyDZ5PgWKO7pDDIUcaFqT8xHcK_W8gt1VJV8hJ5y83c6KAAABEEAAAB4AAAAAAAAAAAAAAAAAAAABAAAwAcA_v8xPAAAAABEAGBCFHAACTC2N__vVCdcqCmlHwo02IR3SgNuYTFSAFoA
+        expiresAt: '2022-12-06T16:31:47.079Z'
+    personalAccessKey: >-
+      CiRiYjhiMjk4Yi0wMjE5LTQyYjYtYTFhMS1jMTU0OWE4MzdmNTkQ-v2XCxjZ5PgWKhkABeaRgjWVUycv0b7SPAwRNLtJI4yXsF4FSgNuYTE

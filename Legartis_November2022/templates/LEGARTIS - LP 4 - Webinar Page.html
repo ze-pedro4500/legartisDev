@@ -1,0 +1,44 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Landing Page v4 - Webinar 
+-->
+
+{% extends "./layouts/base_LP.html" %}
+
+{% block body %}
+<main id="main-content" class="body-container-wrapper">
+  {% dnd_area 'dnd_area' class='body-container body-container--home solution-page legartis white-header', label='Main section' %}
+
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Landing Page Banner.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %} 
+
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/CountDown.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %} 
+
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Legartis 2 Col Image With Content.module"  add_custom_class = 'lp-agenda' %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %}  
+
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Speakers Module.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %}  
+  
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/2 Col Form Module v2.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %}  
+
+  {% end_dnd_area %}
+</main>
+{% endblock body %}
+
+{% block footer %}
+{% module "module_16231626337117" path="/Legartis_April2021/modules/LP Footer Module", label="LP Footer Module" %}
+{% endblock footer %}

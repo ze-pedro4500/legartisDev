@@ -1,0 +1,30 @@
+<div class="slider-v3-sec" id="{{ module.add_custom_id }}" style="background-color:{{ module.sec_background_color.color }};">
+  <div class="container">
+    <div class="slider-v3-title">
+      <h3>
+        {{ module.title }}
+      </h3>
+    </div>
+    <div class="outter-slider-v3 slider-v3">
+      {% for item in module.slider_group %}
+      <div class="inner-slider-v3">
+        <div class="slider-v3-img">
+          {% if item.image.src %}
+          {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}"' %}
+          {% if item.image.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif item.image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.image.max_width }}" height="{{ item.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = item.image.loading != 'disabled' ? 'loading="{{ item.image.loading }}"' : '' %}
+          <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <div class="slider-v3-content">
+          {{ item.content }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,220 @@
+[ {
+  "id" : "521e9390-91f5-5ad0-df6d-57cb62380b8c",
+  "name" : "add_custom_id",
+  "display_width" : null,
+  "label" : "Add Custom Id",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "0d3785d9-361d-a201-5656-2d52e43f586d",
+  "name" : "add_custom_class",
+  "display_width" : null,
+  "label" : "Add Custom Class",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "871185e6-e1a2-e550-6098-3a65b74b4c79",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "b6a7dc29-15ee-cdfe-315c-83d298c39cf5",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h3>Subscribe to get the latest news</h3>\n<p><span style=\"color: #6a6a6a;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>"
+}, {
+  "id" : "e355a361-931b-ac2a-d06f-244ef8e3a1ca",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Form Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "e4adbe47-d462-2396-c7e7-62d52c812966",
+  "name" : "form",
+  "display_width" : null,
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "",
+    "response_type" : "redirect",
+    "message" : "Thanks for submitting the form.",
+    "redirect_id" : null,
+    "redirect_url" : "http://www.google.com"
+  }
+}, {
+  "id" : "96a2942d-c746-0299-c0a9-6b16d7a20c1d",
+  "name" : "notifications_are_overridden",
+  "display_width" : null,
+  "label" : "Send form notifications to specified email addresses instead of the form defaults",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "e4adbe47-d462-2396-c7e7-62d52c812966",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "^((?!\\\"form_type\\\":\\\"TICKET_FORM\\\").)*$",
+    "property" : null,
+    "operator" : "MATCHES_REGEX",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "e496f0fb-4c96-8a5f-5fa3-54a5838f02a2",
+  "name" : "notifications_override_email_addresses",
+  "display_width" : null,
+  "label" : "Email Addresses",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "96a2942d-c746-0299-c0a9-6b16d7a20c1d",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "MATCHES_REGEX",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "allow_custom_email_addresses" : true,
+  "type" : "email"
+}, {
+  "id" : "fc055bb2-4052-dee0-a007-2dc5a6bfe906",
+  "name" : "follow_up_type_automation",
+  "display_width" : null,
+  "label" : "Add to workflow",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : null,
+    "controlling_value_regex" : null,
+    "property" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : {
+      "operator" : "HAS_ALL",
+      "scopes" : [ "workflows-access" ]
+    },
+    "hidden_subfields" : null
+  },
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "072ce88d-62f2-604d-feab-f8199eeb40f7",
+  "name" : "follow_up_type_simple",
+  "display_width" : null,
+  "label" : "Send a follow-up email",
+  "help_text" : "To send a follow-up email, make sure the 'Set contacts created as marketing contacts’ setting is turned on. You can manage this in options. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Learn more</a>",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : null,
+    "controlling_value_regex" : null,
+    "property" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : {
+      "operator" : "HAS_ALL",
+      "scopes" : [ "email-marketing-product-access" ]
+    },
+    "hidden_subfields" : null
+  },
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "fa108c7e-d78d-9edd-f015-f3d8e35fb790",
+  "name" : "simple_email_for_live_id",
+  "display_width" : null,
+  "label" : "Email",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "072ce88d-62f2-604d-feab-f8199eeb40f7",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "MATCHES_REGEX",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "followupemail"
+}, {
+  "id" : "82375ac5-e902-3628-b674-1eb8f5397c41",
+  "name" : "sfdc_campaign",
+  "display_width" : null,
+  "label" : "Salesforce campaign",
+  "required" : false,
+  "locked" : false,
+  "type" : "salesforcecampaign"
+}, {
+  "id" : "34b4b4be-2136-675e-fda8-358d6a2d1195",
+  "name" : "latest_news_image",
+  "display_width" : null,
+  "label" : "Latest News Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/ysanafj5.png",
+    "alt" : "ysanafj5",
+    "loading" : "lazy",
+    "width" : 603,
+    "height" : 423,
+    "max_width" : 603,
+    "max_height" : 423
+  }
+}, {
+  "id" : "296aaa01-dde4-22b4-0f58-ee97ad831da2",
+  "name" : "latest_news_background_shape",
+  "display_width" : null,
+  "label" : "Latest News Background Shape",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/Logo%20element%202-May-13-2021-11-09-23-71-AM.png",
+    "alt" : "Logo element 2-May-13-2021-11-09-23-71-AM",
+    "loading" : "lazy",
+    "width" : 268,
+    "height" : 268,
+    "max_width" : 268,
+    "max_height" : 268
+  }
+} ]

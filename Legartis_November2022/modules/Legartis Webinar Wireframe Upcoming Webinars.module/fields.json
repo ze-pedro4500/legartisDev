@@ -1,0 +1,211 @@
+[ {
+  "id" : "6848e59b-0993-5d9b-16be-5a0adbb58de7",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 66
+  }
+}, {
+  "id" : "00972497-5a88-c83d-6bed-015856b670d1",
+  "name" : "shape_image",
+  "display_width" : null,
+  "label" : "Shape Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.legartis.ai/hubfs/Legartis%20Webinar%20Wireframe/Mask%20Group%209.png",
+    "alt" : "Mask Group 9",
+    "loading" : "lazy",
+    "width" : 697,
+    "height" : 1045,
+    "max_width" : 697,
+    "max_height" : 1045
+  }
+}, {
+  "id" : "5b8cc189-6644-eb9a-b0e5-09c60c5da4cc",
+  "name" : "heading_title",
+  "display_width" : null,
+  "label" : "Heading Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>UPCOMING WEBINARS</h2>\n<p>Reap the benefits of automated contract review. Using artificial intelligence</p>"
+}, {
+  "id" : "608e7299-4c20-00f6-e173-c86a61409d38",
+  "name" : "heading_color",
+  "display_width" : null,
+  "label" : "Heading color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#060606",
+    "opacity" : 100
+  }
+}, {
+  "id" : "9ea8e543-37b0-15d5-fab7-2877417989f8",
+  "name" : "text_color",
+  "display_width" : null,
+  "label" : "Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#6A6A6A",
+    "opacity" : 100
+  }
+}, {
+  "id" : "21b34b1e-a897-b75b-3eea-9b6a38b64578",
+  "name" : "right_shape_image",
+  "display_width" : null,
+  "label" : "Right Shape Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.legartis.ai/hubfs/Legartis%20Webinar%20Wireframe/Mask%20Group%208-1.png",
+    "alt" : "Mask Group 8-1",
+    "loading" : "lazy",
+    "width" : 694,
+    "height" : 896,
+    "max_width" : 694,
+    "max_height" : 896
+  }
+}, {
+  "id" : "86e04ce7-b547-1199-6793-d7ff79852951",
+  "name" : "card_body",
+  "display_width" : null,
+  "label" : "Card Body",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "bb37b515-5c16-7c7c-1357-b22866f48799",
+    "name" : "card_body_image",
+    "display_width" : null,
+    "label" : "Card Body Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.legartis.ai/hubfs/Legartis%20Webinar%20Wireframe/Photo%203.png",
+      "alt" : "Photo 3",
+      "loading" : "lazy",
+      "width" : 673,
+      "height" : 381,
+      "max_width" : 673,
+      "max_height" : 381
+    }
+  }, {
+    "id" : "36aaabe5-cb16-7e0f-d93d-573a155d582f",
+    "name" : "card_body_list",
+    "display_width" : null,
+    "label" : "Card Body List",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>Sed ut perspiciatis unde omnis</h3>\n<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat dolor in reprehenderit non proident.</p>"
+  }, {
+    "id" : "35d7dc0e-9a09-f618-5e95-3202c988339e",
+    "name" : "card_body_link",
+    "display_width" : null,
+    "label" : "Card Body Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "363c94cf-d76e-a0ae-529b-5dc37b0ff707",
+    "name" : "card_body_link_text",
+    "display_width" : null,
+    "label" : "Card Body Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "LEARN MORE"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "card_body_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.legartis.ai/hubfs/Legartis%20Webinar%20Wireframe/Photo%203.png",
+      "alt" : "Photo 3",
+      "loading" : "lazy",
+      "width" : 673,
+      "height" : 381,
+      "max_width" : 673,
+      "max_height" : 381
+    },
+    "card_body_list" : "<h3>Sed ut perspiciatis unde omnis</h3>\n<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat dolor in reprehenderit non proident.</p>",
+    "card_body_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "card_body_link_text" : "LEARN MORE"
+  }, {
+    "card_body_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.legartis.ai/hubfs/Legartis%20Webinar%20Wireframe/Photo%203.png",
+      "alt" : "Photo 3",
+      "loading" : "lazy",
+      "width" : 673,
+      "height" : 381,
+      "max_width" : 673,
+      "max_height" : 381
+    },
+    "card_body_list" : "<h3>Sed ut perspiciatis unde omnis</h3>\n<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat dolor in reprehenderit non proident.</p>",
+    "card_body_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "card_body_link_text" : "LEARN MORE"
+  } ]
+} ]

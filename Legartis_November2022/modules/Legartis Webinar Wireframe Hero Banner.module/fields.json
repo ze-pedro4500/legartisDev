@@ -1,0 +1,142 @@
+[ {
+  "id" : "dca482af-0970-afa1-8470-93d01fb265a9",
+  "name" : "hero_banner_image",
+  "display_width" : null,
+  "label" : "Hero Banner Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.legartis.ai/hubfs/Legartis%20Webinar%20Wireframe/new-hero-banner.png",
+    "alt" : "new-hero-banner",
+    "loading" : "lazy",
+    "width" : 1920,
+    "height" : 789,
+    "max_width" : 1920,
+    "max_height" : 789
+  }
+}, {
+  "id" : "1285fdee-ae59-c4b4-1732-0ce77e6fe3dc",
+  "name" : "banner_text",
+  "display_width" : null,
+  "label" : "Banner Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h1>Lorem ipsum dolor sit amet</h1>\n<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium,</p>"
+}, {
+  "id" : "fa6705fb-45fb-5824-adab-529b31a3d925",
+  "name" : "button_group",
+  "display_width" : null,
+  "label" : "Button Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "59e8c9b1-378f-0d71-7437-b2e5359e83ce",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "7b8db6b7-5c3a-1f32-274c-9a88915bdcd9",
+    "name" : "select_button",
+    "display_width" : null,
+    "label" : "Select Button",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "display" : "select",
+    "choices" : [ [ "hub", "Hubspot CTA" ], [ "btn", "Normal Button" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "type" : "choice",
+    "default" : [ "btn" ]
+  }, {
+    "id" : "c2c3428c-ff08-8d93-7dce-13377131bb74",
+    "name" : "select_button_style",
+    "display_width" : null,
+    "label" : "Select Button Style",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "theme", "Theme Button" ], [ "link", "Link Button" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "type" : "choice",
+    "default" : "theme"
+  }, {
+    "id" : "4ce2d9be-ebde-41a0-4fb6-91922e595dc7",
+    "name" : "hubspot_cta",
+    "display_width" : null,
+    "label" : "Hubspot CTA",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "7b8db6b7-5c3a-1f32-274c-9a88915bdcd9",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "hub",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "cta"
+  }, {
+    "id" : "59e8c9b1-378f-0d71-7437-b2e5359e83ce",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Button Text"
+  }, {
+    "id" : "a370e5fb-a443-effc-7326-3b784cd38cb4",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "select_button" : [ "btn" ],
+    "select_button_style" : "theme",
+    "button_text" : "Button Text",
+    "button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

@@ -1,0 +1,125 @@
+[ {
+  "id" : "7088df71-c654-0ecb-dcf7-7e2bc1d09077",
+  "name" : "add_custom_id",
+  "display_width" : null,
+  "label" : "Add Custom Id",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "c3f6af28-548f-368a-ae6d-04ace6913d21",
+  "name" : "sec_background_color",
+  "display_width" : null,
+  "label" : "Section Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#F9F9F9",
+    "opacity" : 100
+  }
+}, {
+  "id" : "55421fbe-d4c5-c687-37c8-537b1ce6df68",
+  "name" : "main_title",
+  "display_width" : null,
+  "label" : "Main Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "legartis recruiting process"
+}, {
+  "id" : "a8c84f10-5d56-c72e-b2b2-bd3b02724961",
+  "name" : "process_box_group",
+  "display_width" : null,
+  "label" : "Process Box group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "352cb0f8-0de3-5fa7-fd37-60c52ad39658",
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "98eb0f18-ef80-f49f-9f41-d6df89508ff3",
+    "name" : "number_color",
+    "display_width" : null,
+    "label" : "Number Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#E49470",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "5b580491-dfd1-2e02-fe90-e2e334913943",
+    "name" : "number",
+    "display_width" : null,
+    "label" : "Number",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "1"
+  }, {
+    "id" : "352cb0f8-0de3-5fa7-fd37-60c52ad39658",
+    "name" : "sub_title",
+    "display_width" : null,
+    "label" : "Sub title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Interview with recruiter"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "number_color" : {
+      "color" : "#E49470",
+      "opacity" : 100
+    },
+    "number" : "1",
+    "sub_title" : "Interview with recruiter"
+  }, {
+    "number_color" : {
+      "color" : "#E49470",
+      "opacity" : 100
+    },
+    "number" : "1",
+    "sub_title" : "Interview with recruiter"
+  }, {
+    "number_color" : {
+      "color" : "#E49470",
+      "opacity" : 100
+    },
+    "number" : "1",
+    "sub_title" : "Interview with recruiter"
+  }, {
+    "number_color" : {
+      "color" : "#E49470",
+      "opacity" : 100
+    },
+    "number" : "1",
+    "sub_title" : "Interview with recruiter"
+  }, {
+    "number_color" : {
+      "color" : "#E49470",
+      "opacity" : 100
+    },
+    "number" : "1",
+    "sub_title" : "Interview with recruiter"
+  } ]
+} ]

@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 92156107282,
+  "label" : "Slider v1 - Use Case",
+  "is_available_for_new_content" : true
+}

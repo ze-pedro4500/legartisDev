@@ -1,0 +1,197 @@
+[ {
+  "id" : "28cd5117-82a3-fa9d-d6c9-02daa2849504",
+  "name" : "add_custom_id",
+  "display_width" : null,
+  "label" : "Add Custom Id",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "c3f6af28-548f-368a-ae6d-04ace6913d21",
+  "name" : "sec_background_color",
+  "display_width" : null,
+  "label" : "Section Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#F9F9F9",
+    "opacity" : 100
+  }
+}, {
+  "id" : "60294ad9-8cca-8584-5e11-4ae9b9ceddfb",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Companies that successfully use Legartis"
+}, {
+  "id" : "c374b277-3486-b556-98d8-7f840bb3f996",
+  "name" : "logo_background_color",
+  "display_width" : null,
+  "label" : "Logo Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#fff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "92ac084a-9764-2e65-d928-ad172ee2a7b9",
+  "name" : "slider_group",
+  "display_width" : null,
+  "label" : "Slider Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 10
+  },
+  "children" : [ {
+    "id" : "5bb326c0-aff8-45d5-d385-de655fad3c61",
+    "name" : "logo",
+    "display_width" : null,
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    }
+  }, {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    }
+  }, {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    }
+  }, {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    }
+  }, {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    }
+  }, {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    }
+  }, {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    }
+  }, {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    }
+  }, {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    }
+  }, {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/g10.png",
+      "alt" : "g10",
+      "loading" : "lazy",
+      "width" : 136,
+      "height" : 81,
+      "max_width" : 136,
+      "max_height" : 81
+    }
+  } ]
+} ]

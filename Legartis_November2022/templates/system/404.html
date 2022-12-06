@@ -1,0 +1,35 @@
+<!--
+templateType: error_page
+isAvailableForNewContent: true
+label: LEGARTIS - 404 error
+-->
+{% set template_css = '../../css/templates/system.css' %}
+{% extends '../layouts/base.html' %}
+
+{% block header %}
+<div class="sys-header">  
+  {% global_partial path='../partials/header.html' %}
+
+  <style>
+    .sys-header .header-sec {
+      background-color: #01256E;
+      padding-bottom: 20px;
+    }
+  </style>
+</div>
+
+{% endblock header %}
+
+{% block body %}
+<main id="main-content" class="body-container-wrapper legartis white-header1">
+  <section class="content-wrapper">
+    <div class="error-page" data-error="404">
+      <h1 class="error-page_heading">
+        Oops - wrong way. Sorry
+      </h1>
+      <a class="hs-button button" href="https://www.legartis.ai/">Start Home</a>
+
+    </div>
+  </section>
+</main>
+{% endblock body %}

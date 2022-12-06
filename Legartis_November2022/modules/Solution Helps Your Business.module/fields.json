@@ -1,0 +1,144 @@
+[ {
+  "id" : "1e03a5dc-7427-3e12-4b5f-4bbbb42edb6a",
+  "name" : "add_custom_id",
+  "display_width" : null,
+  "label" : "Add Custom Id",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "c3f6af28-548f-368a-ae6d-04ace6913d21",
+  "name" : "sec_background_color",
+  "display_width" : null,
+  "label" : "Section Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#F9F9F9",
+    "opacity" : 100
+  }
+}, {
+  "id" : "25a2dedb-2a05-1bf3-cc80-1a34ad9147db",
+  "name" : "main_title",
+  "display_width" : null,
+  "label" : "Main Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "HOW LEGARTIS HELPS YOUR BUSINESS"
+}, {
+  "id" : "31f674d3-877b-4b32-f795-04633c42ebe7",
+  "name" : "box_group",
+  "display_width" : null,
+  "label" : "Box Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "bc699836-bf7a-430b-6ff9-0d7f42186e38",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h4>Negotiate Supplier Contracts More Efficiently</h4>\n<p><span style=\"color: #6a6a6a;\">Legartis increases precision and significantly shortens the time it takes to review contracts. This means you are always optimally prepared for talk and negotiations with your suppliers.</span></p>"
+  }, {
+    "id" : "271dff99-4375-0ab8-f8e5-943960785b22",
+    "name" : "select_image_position_",
+    "display_width" : null,
+    "label" : "Select Image Position ",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "rb", "Right - Bottom" ], [ "rt", "Right - Top" ], [ "lb", "Left - Bottom" ], [ "lt", "Left - Top" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "type" : "choice",
+    "default" : "lt"
+  }, {
+    "id" : "5bb326c0-aff8-45d5-d385-de655fad3c61",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/2Coloum_shape_01.png",
+      "alt" : "2Coloum_shape_01",
+      "width" : 195,
+      "height" : 230,
+      "max_width" : 195,
+      "max_height" : 230,
+      "size_type" : "auto"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "content" : "<h4>Negotiate Supplier Contracts More Efficiently</h4>\n<p><span style=\"color: #6a6a6a;\">Legartis increases precision and significantly shortens the time it takes to review contracts. This means you are always optimally prepared for talk and negotiations with your suppliers.</span></p>",
+    "select_image_position_" : "lt",
+    "image" : {
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/2Coloum_shape_01.png",
+      "alt" : "2Coloum_shape_01",
+      "width" : 195,
+      "height" : 230,
+      "max_width" : 195,
+      "max_height" : 230,
+      "size_type" : "auto"
+    }
+  }, {
+    "content" : "<h4>Negotiate Supplier Contracts More Efficiently</h4>\n<p><span style=\"color: #6a6a6a;\">Legartis increases precision and significantly shortens the time it takes to review contracts. This means you are always optimally prepared for talk and negotiations with your suppliers.</span></p>",
+    "select_image_position_" : "lt",
+    "image" : {
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/2Coloum_shape_01.png",
+      "alt" : "2Coloum_shape_01",
+      "width" : 195,
+      "height" : 230,
+      "max_width" : 195,
+      "max_height" : 230,
+      "size_type" : "auto"
+    }
+  }, {
+    "content" : "<h4>Negotiate Supplier Contracts More Efficiently</h4>\n<p><span style=\"color: #6a6a6a;\">Legartis increases precision and significantly shortens the time it takes to review contracts. This means you are always optimally prepared for talk and negotiations with your suppliers.</span></p>",
+    "select_image_position_" : "lt",
+    "image" : {
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/2Coloum_shape_01.png",
+      "alt" : "2Coloum_shape_01",
+      "width" : 195,
+      "height" : 230,
+      "max_width" : 195,
+      "max_height" : 230,
+      "size_type" : "auto"
+    }
+  }, {
+    "content" : "<h4>Negotiate Supplier Contracts More Efficiently</h4>\n<p><span style=\"color: #6a6a6a;\">Legartis increases precision and significantly shortens the time it takes to review contracts. This means you are always optimally prepared for talk and negotiations with your suppliers.</span></p>",
+    "select_image_position_" : "lt",
+    "image" : {
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/2Coloum_shape_01.png",
+      "alt" : "2Coloum_shape_01",
+      "width" : 195,
+      "height" : 230,
+      "max_width" : 195,
+      "max_height" : 230,
+      "size_type" : "auto"
+    }
+  } ]
+} ]

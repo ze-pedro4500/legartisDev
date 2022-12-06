@@ -1,0 +1,226 @@
+[ {
+  "id" : "a75ae326-537e-c4b9-7f99-eee1d3a0d988",
+  "name" : "add_custom_id",
+  "display_width" : null,
+  "label" : "Add Custom Id",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "b06a1cce-2e7f-c0cc-193a-017ccbf74209",
+  "name" : "add_custom_class",
+  "display_width" : null,
+  "label" : "Add Custom Class",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "c3f6af28-548f-368a-ae6d-04ace6913d21",
+  "name" : "sec_background_color",
+  "display_width" : null,
+  "label" : "Section Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#F9F9F9",
+    "opacity" : 100
+  }
+}, {
+  "id" : "60294ad9-8cca-8584-5e11-4ae9b9ceddfb",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "WHAT OUR CLIENTS SAY"
+}, {
+  "id" : "92ac084a-9764-2e65-d928-ad172ee2a7b9",
+  "name" : "slider_group",
+  "display_width" : null,
+  "label" : "Slider Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "bc699836-bf7a-430b-6ff9-0d7f42186e38",
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "bc699836-bf7a-430b-6ff9-0d7f42186e38",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h2>Efficient Contract Review, Frictionless Cooperation</h2>\n<div class=\"comment\">\n<p style=\"font-size: 24px;\">The Legartis solution supports Daimler in optimising its legal processes and helps to make its contract review process more efficient.</p>\n</div>\n<p style=\"font-size: 24px;\">Pietro Brambilla, Head of Digital Transformation, Integrity and Legal Affairs, Daimler AG</p>"
+  }, {
+    "id" : "f720442c-7d89-e177-fd14-ea700a4253a6",
+    "name" : "logo",
+    "display_width" : null,
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/daimler2.png",
+      "alt" : "daimler2",
+      "loading" : "lazy",
+      "width" : 177,
+      "height" : 22,
+      "max_width" : 177,
+      "max_height" : 22
+    }
+  }, {
+    "id" : "5bb326c0-aff8-45d5-d385-de655fad3c61",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/Partner%20Photo.png",
+      "alt" : "Partner Photo",
+      "loading" : "lazy",
+      "width" : 641,
+      "height" : 653,
+      "max_width" : 641,
+      "max_height" : 653
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "content" : "<h2>Efficient Contract Review, Frictionless Cooperation</h2>\n<div class=\"comment\">\n<p style=\"font-size: 24px;\">The Legartis solution supports Daimler in optimising its legal processes and helps to make its contract review process more efficient.</p>\n</div>\n<p style=\"font-size: 24px;\">Pietro Brambilla, Head of Digital Transformation, Integrity and Legal Affairs, Daimler AG</p>",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/daimler2.png",
+      "alt" : "daimler2",
+      "loading" : "lazy",
+      "width" : 177,
+      "height" : 22,
+      "max_width" : 177,
+      "max_height" : 22
+    },
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/Partner%20Photo.png",
+      "alt" : "Partner Photo",
+      "loading" : "lazy",
+      "width" : 641,
+      "height" : 653,
+      "max_width" : 641,
+      "max_height" : 653
+    }
+  }, {
+    "content" : "<h2>Efficient Contract Review, Frictionless Cooperation</h2>\n<div class=\"comment\">\n<p style=\"font-size: 24px;\">The Legartis solution supports Daimler in optimising its legal processes and helps to make its contract review process more efficient.</p>\n</div>\n<p style=\"font-size: 24px;\">Pietro Brambilla, Head of Digital Transformation, Integrity and Legal Affairs, Daimler AG</p>",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/daimler2.png",
+      "alt" : "daimler2",
+      "loading" : "lazy",
+      "width" : 177,
+      "height" : 22,
+      "max_width" : 177,
+      "max_height" : 22
+    },
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/Partner%20Photo.png",
+      "alt" : "Partner Photo",
+      "loading" : "lazy",
+      "width" : 641,
+      "height" : 653,
+      "max_width" : 641,
+      "max_height" : 653
+    }
+  }, {
+    "content" : "<h2>Efficient Contract Review, Frictionless Cooperation</h2>\n<div class=\"comment\">\n<p style=\"font-size: 24px;\">The Legartis solution supports Daimler in optimising its legal processes and helps to make its contract review process more efficient.</p>\n</div>\n<p style=\"font-size: 24px;\">Pietro Brambilla, Head of Digital Transformation, Integrity and Legal Affairs, Daimler AG</p>",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/daimler2.png",
+      "alt" : "daimler2",
+      "loading" : "lazy",
+      "width" : 177,
+      "height" : 22,
+      "max_width" : 177,
+      "max_height" : 22
+    },
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/Partner%20Photo.png",
+      "alt" : "Partner Photo",
+      "loading" : "lazy",
+      "width" : 641,
+      "height" : 653,
+      "max_width" : 641,
+      "max_height" : 653
+    }
+  }, {
+    "content" : "<h2>Efficient Contract Review, Frictionless Cooperation</h2>\n<div class=\"comment\">\n<p style=\"font-size: 24px;\">The Legartis solution supports Daimler in optimising its legal processes and helps to make its contract review process more efficient.</p>\n</div>\n<p style=\"font-size: 24px;\">Pietro Brambilla, Head of Digital Transformation, Integrity and Legal Affairs, Daimler AG</p>",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/daimler2.png",
+      "alt" : "daimler2",
+      "loading" : "lazy",
+      "width" : 177,
+      "height" : 22,
+      "max_width" : 177,
+      "max_height" : 22
+    },
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/Partner%20Photo.png",
+      "alt" : "Partner Photo",
+      "loading" : "lazy",
+      "width" : 641,
+      "height" : 653,
+      "max_width" : 641,
+      "max_height" : 653
+    }
+  }, {
+    "content" : "<h2>Efficient Contract Review, Frictionless Cooperation</h2>\n<div class=\"comment\">\n<p style=\"font-size: 24px;\">The Legartis solution supports Daimler in optimising its legal processes and helps to make its contract review process more efficient.</p>\n</div>\n<p style=\"font-size: 24px;\">Pietro Brambilla, Head of Digital Transformation, Integrity and Legal Affairs, Daimler AG</p>",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/daimler2.png",
+      "alt" : "daimler2",
+      "loading" : "lazy",
+      "width" : 177,
+      "height" : 22,
+      "max_width" : 177,
+      "max_height" : 22
+    },
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/Partner%20Photo.png",
+      "alt" : "Partner Photo",
+      "loading" : "lazy",
+      "width" : 641,
+      "height" : 653,
+      "max_width" : 641,
+      "max_height" : 653
+    }
+  } ]
+} ]

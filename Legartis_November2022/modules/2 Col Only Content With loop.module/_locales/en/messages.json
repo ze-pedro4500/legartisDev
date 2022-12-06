@@ -1,0 +1,132 @@
+{
+  "add_custom_class.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_class.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_class.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_class.label" : {
+    "message" : "Add Custom Class",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_class.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_class.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_id.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_id.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_id.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_id.label" : {
+    "message" : "Add Custom Class copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_id.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_id.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content.default" : {
+    "message" : "<h3>Why collaborate with legartis?</h3>\n<p><span style=\"color: #6a6a6a;\">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Workflow",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "2 Col Only Content With loop",
+    "description" : "",
+    "placeholders" : null
+  },
+  "section_background_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "section_background_color.default.color" : {
+    "message" : "#F9F9F9",
+    "description" : null,
+    "placeholders" : null
+  },
+  "section_background_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "section_background_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "section_background_color.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "section_background_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

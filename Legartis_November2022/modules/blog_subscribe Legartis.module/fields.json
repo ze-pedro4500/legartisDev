@@ -1,0 +1,31 @@
+[ {
+  "id" : "65eb34eb-8c1c-01a3-5e08-60946b4d9ea2",
+  "name" : "select_blog",
+  "display_width" : null,
+  "label" : "Select blog to display",
+  "help_text" : "Default will use the current blog when used in a blog template or the primary blog when used elsewhere.",
+  "required" : false,
+  "locked" : false,
+  "type" : "blog"
+}, {
+  "id" : "7fc80a6f-5107-253d-2f65-591302b81645",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title to display above form",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Subscribe Here!"
+}, {
+  "id" : "35981351-6a67-cbca-b7bb-dc4e36ded0fe",
+  "name" : "response_message",
+  "display_width" : null,
+  "label" : "Inline response for users",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Thanks for subscribing!"
+} ]

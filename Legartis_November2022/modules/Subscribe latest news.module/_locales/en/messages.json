@@ -1,0 +1,302 @@
+{
+  "add_custom_class.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_class.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_class.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_class.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_class.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_class.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_id.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_id.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_id.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_id.label" : {
+    "message" : "Add Custom Class copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_id.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "add_custom_id.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "background_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "background_color.default.color" : {
+    "message" : "#FFF",
+    "description" : null,
+    "placeholders" : null
+  },
+  "background_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "background_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "background_color.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "background_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content.default" : {
+    "message" : "<h3>Subscribe to get the latest news</h3>\n<p><span style=\"color: #6a6a6a;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "follow_up_type_automation.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_automation.label" : {
+    "message" : "Add to workflow",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "To send a follow-up email, make sure the 'Set contacts created as marketing contacts’ setting is turned on. You can manage this in options. <a href='https://knowledge.hubspot.com/contacts/set-contacts-as-marketing#set-the-default-marketing-status-for-new-contacts'>Learn more</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Send a follow-up email",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Thanks for submitting the form.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Form",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_follow_ups_workflow_id.label" : {
+    "message" : "Workflow",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_field.default.loading" : {
+    "message" : "lazy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.default.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.default.src" : {
+    "message" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/ysanafj5.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "latest_news_background_shape.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "latest_news_background_shape.default.alt" : {
+    "message" : "Logo element 2-May-13-2021-11-09-23-71-AM",
+    "description" : null,
+    "placeholders" : null
+  },
+  "latest_news_background_shape.default.loading" : {
+    "message" : "lazy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "latest_news_background_shape.default.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "latest_news_background_shape.default.src" : {
+    "message" : "https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/Logo%20element%202-May-13-2021-11-09-23-71-AM.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "latest_news_background_shape.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "latest_news_background_shape.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "latest_news_background_shape.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "latest_news_background_shape.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "latest_news_image.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Subscribe latest news",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Send form notifications to specified email addresses instead of the form defaults",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "Email Addresses",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.default" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Salesforce campaign",
+    "description" : "Salesforce is a company name and should not be translated",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "Email",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Form Title",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  }
+}

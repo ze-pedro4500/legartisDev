@@ -1,0 +1,26 @@
+<div class="process-sec" id="{{ module.add_custom_id }}" style="background-color:rgba({{ module.sec_background_color.color|convert_rgb }},calc({{  module.sec_background_color.opacity }}/100));">
+  <div class="container">
+    <div class="process-title">
+      <h3>
+        {{ module.main_title }}
+      </h3>
+    </div>
+    <div class="process-wp display-flex">
+      {% for item in module.process_box_group %}
+      <div class="outter" id="process{{loop.index}}">
+        <h2 style="color:rgba({{ item.number_color.color|convert_rgb }},calc({{  item.number_color.opacity }}/100));">
+          {{ item.number }}
+        </h2>
+        <h4>
+          {{ item.sub_title }}
+        </h4>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<style>
+  {% for item in module.process_box_group %}
+  .process-wp #process{{loop.index}}.outter:after,.process-wp #process{{loop.index}}.outter:before{background-color:rgba({{ item.number_color.color|convert_rgb }},calc({{  item.number_color.opacity }}/100));}
+  {% endfor %}
+</style>

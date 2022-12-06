@@ -1,0 +1,19 @@
+<div class="stay-up-webinars">
+    <div class="container">
+        <div class="content-text">
+            {{ module.content_text }}
+        </div>
+    </div>
+</div>
+
+
+{% require_css %}
+<style>
+    .stay-up-webinars{background-color: rgba({{ module.background_color.color|convert_rgb }}, 100%)}
+    .stay-up-webinars .content-text h2{color: {{module.heading_color.color}};}
+    .stay-up-webinars .content-text p{color:{{module.text_color.color}};}
+    .stay-up-webinars:before{background-image: url({{ module.green_shape_.src }});}
+
+    }
+</style>
+{% end_require_css %}
