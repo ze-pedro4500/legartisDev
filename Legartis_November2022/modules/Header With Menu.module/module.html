@@ -29,7 +29,7 @@
           <img src="{{ module.image.src }}" alt="{{ module.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="white-logo" > 
           {% endif %}
 
-          <img src="https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/LegartisLogo-blue%20.png" class="blue-logo" style="max-width: 100%; height: auto;">
+          <img data-src="https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/LegartisLogo-blue%20.png" loading="lazy" class="blue-logo" style="max-width: 100%; height: auto;">
 
 
         </a>
@@ -73,7 +73,7 @@
     </div>
   </div>
 </div>
-
+{% require_js position="footer" %}
 <script>
 
   $(document).ready(function() {
@@ -85,5 +85,6 @@
 
   });
 </script>
+{% end_require_js %}
 
 

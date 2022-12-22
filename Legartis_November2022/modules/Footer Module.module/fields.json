@@ -640,7 +640,7 @@
   "required" : false,
   "locked" : false,
   "type" : "richtext",
-  "default" : "<a href=\"https://www.swissmadesoftware.org/\"> <img src=\"https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/SMS_Logo_weiss-01-2.png\" alt=\"Swiss made software\"></a>"
+  "default" : "<a href=\"https://www.swissmadesoftware.org/\"> <img data-src=\"https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/SMS_Logo_weiss-01-2.png\" loading='lazy' alt=\"Swiss made software\"></a>"
 }, {
   "id" : "6bd7b0ac-3a45-be74-f58f-d3449ce20180",
   "name" : "image_field_1",

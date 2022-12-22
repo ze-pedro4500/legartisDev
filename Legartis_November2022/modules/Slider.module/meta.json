@@ -1,7 +1,0 @@
-{
-  "global" : false,
-  "host_template_types" : [ "PAGE", "BLOG_POST" ],
-  "module_id" : 92157227394,
-  "label" : "Slide",
-  "is_available_for_new_content" : true
-}

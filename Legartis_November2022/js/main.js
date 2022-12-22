@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", () => {
+
 (function () {
   // Polyfill for NodeList.prototype.forEach() in IE
   if (window.NodeList && !NodeList.prototype.forEach) {
@@ -435,6 +437,6 @@ jQuery('.inner-blog-tag .widget-module li a').each(function(){
 
 
 
-
+})
 
 
