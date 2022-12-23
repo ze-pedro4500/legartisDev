@@ -1,0 +1,40 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Media Press Page
+-->
+
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+<main id="main-content" class="body-container-wrapper">
+  {% dnd_area 'dnd_area' class='body-container body-container--home solution-page legartis white-header', label='Main section' %}
+
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Solution Banner Module.module" , add_custom_class = 'media-press-banner' %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %} 
+
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Three Column - Image with Content.module" , add_custom_class = '' %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %}
+
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Logo Module V2.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %}  
+
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Solution Only Text And CTA Module V2.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %}  
+
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Solution Only Text And CTA Module.module"  %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %}
+
+  {% end_dnd_area %}
+</main>
+{% endblock body %}

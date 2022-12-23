@@ -1,0 +1,48 @@
+[ {
+  "id" : "f3703976-a576-4d58-da91-007ab4eabee5",
+  "name" : "q_a",
+  "display_width" : null,
+  "label" : "Q/A",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "8413f8db-ea23-7039-6757-b9ec66bbd60d",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "8413f8db-ea23-7039-6757-b9ec66bbd60d",
+    "name" : "question",
+    "display_width" : null,
+    "label" : "Question",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Place your question here please",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Wie funktioniert die AI von Legartis?"
+  }, {
+    "id" : "bf3b2e7e-0130-0020-aba1-ce1dc26a2e88",
+    "name" : "answer",
+    "display_width" : null,
+    "label" : "Answer",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Place the answer here please",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem Ipsum"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "question" : "Wie funktioniert die AI von Legartis?",
+    "answer" : "Lorem Ipsum"
+  } ]
+} ]

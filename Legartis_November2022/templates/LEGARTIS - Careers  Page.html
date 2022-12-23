@@ -1,0 +1,60 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label:  Careers  Page
+-->
+
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+<main id="main-content" class="body-container-wrapper">
+  {% dnd_area 'dnd_area' class='body-container body-container--home solution-page legartis white-header', label='Main section' %}
+
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Solution Banner Module.module" , add_custom_class = 'career_banner' %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %} 
+  
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Solution Only Text And CTA Module.module" , add_custom_class = 'about-gradient' %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %}  
+
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Number Counter Module.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %} 
+  
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/What You Get.module" , add_custom_class = 'perks_off' %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %}  
+  
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/2 Col Map Image With Address Content.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %}  
+  
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/What You Get.module" , add_custom_class = 'our_core_value' %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %} 
+  
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Legartis 2 Col Image With Content.module" , add_custom_class = 'career-zigzag' %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %} 
+  
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Process Module.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %} 
+  
+  {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+  {% dnd_module path="../modules/Find Job.module" %}        
+  {% end_dnd_module %}
+  {% end_dnd_section %} 
+ 
+  {% end_dnd_area %}
+</main>
+{% endblock body %}

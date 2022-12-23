@@ -1,0 +1,50 @@
+<div class="triangleboxes">
+  <h1>
+  {% inline_text field="title" value="{{ module.title }}" %}
+  </h1>
+  <span class="tbtxt">
+  {% inline_text field="text_field" value="{{ module.text_field }}" %}
+  </span>
+  <div class="uptriangles">
+    {% for item in module.box %}
+    {% if loop.index <=2 %}
+		<div class="triangle">
+	{% if item.box_logo.src %}
+		{% set sizeAttrs = 'width="{{ item.box_logo.width }}" height="{{ item.box_logo.height }}"' %}
+		{% if item.box_logo.size_type == 'auto' %}
+			{% set sizeAttrs = 'width="{{ item.box_logo.width }}" height="{{ item.box_logo.height }}" style="max-width: 100%; height: auto;"' %}
+		{% elif item.box_logo.size_type == 'auto_custom_max' %}
+			{% set sizeAttrs = 'width="{{ item.box_logo.max_width }}" height="{{ item.box_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+		{% endif %}
+		 {% set loadingAttr = item.box_logo.loading != 'disabled' ? 'loading="{{ item.box_logo.loading }}"' : '' %}
+		<img src="{{ item.box_logo.src }}" alt="{{ item.box_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+	{% endif %}
+	<h4>{% inline_text field="box_title" value="{{ item.box_title }}" %}</h4>
+	<span>{% inline_text field="box_text" value="{{ item.box_text }}" %}<span>
+	<div class="cta">{% cta guid="{{ item.box_cta }}" %}<span class=">">></span></div>
+		</div>
+    {% endif %}
+{% endfor %}
+  </div>
+  <div class="downtriangles">
+    {% for item in module.box %}
+    {% if loop.index>2 %}
+		<div class="triangle">
+	{% if item.box_logo.src %}
+		{% set sizeAttrs = 'width="{{ item.box_logo.width }}" height="{{ item.box_logo.height }}"' %}
+		{% if item.box_logo.size_type == 'auto' %}
+			{% set sizeAttrs = 'width="{{ item.box_logo.width }}" height="{{ item.box_logo.height }}" style="max-width: 100%; height: auto;"' %}
+		{% elif item.box_logo.size_type == 'auto_custom_max' %}
+			{% set sizeAttrs = 'width="{{ item.box_logo.max_width }}" height="{{ item.box_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+		{% endif %}
+		 {% set loadingAttr = item.box_logo.loading != 'disabled' ? 'loading="{{ item.box_logo.loading }}"' : '' %}
+		<img src="{{ item.box_logo.src }}" alt="{{ item.box_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+	{% endif %}
+	<h4>{% inline_text field="box_title" value="{{ item.box_title }}" %}</h4>
+	<span>{% inline_text field="box_text" value="{{ item.box_text }}" %}</span>
+	<div class="cta">{% cta guid="{{ item.box_cta }}" %}<span class=">">></span></div>
+		</div>
+    {% endif %}
+{% endfor %}
+  </div>
+</div>

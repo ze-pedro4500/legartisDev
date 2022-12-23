@@ -1,0 +1,176 @@
+[ {
+  "id" : "f3bb8af7-c4b8-eb13-f0c6-f38703992cd8",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>SPEAKERS</h2>"
+}, {
+  "id" : "8ce65576-59e6-88a9-080a-390ecac2b807",
+  "name" : "user_list",
+  "display_width" : null,
+  "label" : "User List",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "1916ec32-02e2-13b4-0e8b-c6d6c7d7a281",
+    "name" : "user_image",
+    "display_width" : null,
+    "label" : "User image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.legartis.ai/hubfs/Legartis%20Webinar%20Wireframe/Mask%20Group%205.png",
+      "alt" : "Mask Group 5",
+      "loading" : "lazy",
+      "width" : 324,
+      "height" : 324,
+      "max_width" : 324,
+      "max_height" : 324
+    }
+  }, {
+    "id" : "04f42312-385b-106d-c0c4-f2a3829f4711",
+    "name" : "user_name",
+    "display_width" : null,
+    "label" : "User Name",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h4>John Doe</h4>"
+  }, {
+    "id" : "55cc307b-c60d-5678-d93f-839feb9bbb74",
+    "name" : "user_link",
+    "display_width" : null,
+    "label" : "User Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "0e034bb0-547c-8d39-b506-bba84ce9fdb3",
+    "name" : "user_link_text",
+    "display_width" : null,
+    "label" : "User Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Manager, Company Name"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "user_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.legartis.ai/hubfs/Legartis%20Webinar%20Wireframe/Mask%20Group%205.png",
+      "alt" : "Mask Group 5",
+      "loading" : "lazy",
+      "width" : 324,
+      "height" : 324,
+      "max_width" : 324,
+      "max_height" : 324
+    },
+    "user_name" : "<h4>John Doe</h4>",
+    "user_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "user_link_text" : "Manager, Company Name"
+  }, {
+    "user_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.legartis.ai/hubfs/Legartis%20Webinar%20Wireframe/Mask%20Group%205.png",
+      "alt" : "Mask Group 5",
+      "loading" : "lazy",
+      "width" : 324,
+      "height" : 324,
+      "max_width" : 324,
+      "max_height" : 324
+    },
+    "user_name" : "<h4>John Doe</h4>",
+    "user_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "user_link_text" : "Manager, Company Name"
+  }, {
+    "user_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.legartis.ai/hubfs/Legartis%20Webinar%20Wireframe/Mask%20Group%205.png",
+      "alt" : "Mask Group 5",
+      "loading" : "lazy",
+      "width" : 324,
+      "height" : 324,
+      "max_width" : 324,
+      "max_height" : 324
+    },
+    "user_name" : "<h4>John Doe</h4>",
+    "user_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "user_link_text" : "Manager, Company Name"
+  } ]
+}, {
+  "id" : "313d1483-4dff-0bfa-17dc-c9b9104d3717",
+  "name" : "right_shape",
+  "display_width" : null,
+  "label" : "Right Shape",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.legartis.ai/hubfs/Legartis%20Webinar%20Wireframe/Component%207%20%E2%80%93%201-1.png",
+    "alt" : "Component 7 – 1-1",
+    "loading" : "lazy",
+    "width" : 588,
+    "height" : 703,
+    "max_width" : 588,
+    "max_height" : 703
+  }
+} ]

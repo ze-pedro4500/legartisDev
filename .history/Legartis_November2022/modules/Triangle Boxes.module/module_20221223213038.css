@@ -1,0 +1,110 @@
+.triangleboxes h1 {
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    line-height: 50px;
+}
+.triangleboxes span {
+    font-size: 18px;
+}
+.triangleboxes span {
+    font-size: 18px;
+    max-width: 670px;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-top: 25px;
+}
+.triangle {
+    height: 300px;
+    padding: 45px;
+    width: 376px;
+    border-radius: 22px;
+    -webkit-box-shadow: 1px 6px 33px -2px rgb(87 87 87 / 72%);
+    -moz-box-shadow: 1px 6px 33px -2px rgba(87,87,87,0.72);
+    box-shadow: 1px 6px 33px -2px rgb(87 87 87 / 72%);
+}
+.uptriangles {
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 70px;
+    width:820px;
+}
+.triangle h4 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top:11px;
+}
+.triangle span {
+    margin: 0;
+    padding-top: 0;
+    text-align: left;
+    font-size: 16px;
+}
+.triangle .cta {
+    display: flex;
+    width: 125px;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+span.\> {
+    font-size: 21px;
+    margin-top: -2px;
+    font-family: monospace;
+}
+.downtriangles {
+    width: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 16px;
+    padding-bottom:40px;
+}
+@media only screen and (max-width: 1000px) {
+    .uptriangles {
+    display: block;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 0px;
+    width: fit-content;
+}
+    .triangle {
+    height: 300px;
+    margin-top: 60px;
+    padding: 45px;
+    width: 376px;
+    border-radius: 22px;
+    -webkit-box-shadow: 1px 6px 33px -2px rgb(87 87 87 / 72%);
+    -moz-box-shadow: 1px 6px 33px -2px rgba(87,87,87,0.72);
+    box-shadow: 1px 6px 33px -2px rgb(87 87 87 / 72%);
+}
+.downtriangles {
+    display: flex;
+    justify-content: center;
+    margin: 60px auto auto;
+    width: fit-content;
+    padding-bottom: 40px;
+    margin-top: 0px;
+}
+.triangleboxes {
+    padding-top: 100px;
+}
+}
+@media only screen and (max-width: 500px) {
+.triangle {
+    width: 100%;
+}
+.uptriangles {
+    width: 90%;
+}
+.downtriangles{
+    width:90%;
+}
+
+}

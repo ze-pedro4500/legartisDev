@@ -1,0 +1,54 @@
+.triangleboxes h1 {
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    line-height: 50px;
+}
+.triangleboxes span {
+    font-size: 18px;
+}
+.triangleboxes span {
+    font-size: 18px;
+    max-width: 670px;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-top: 25px;
+}
+.triangle {
+    width: 376px;
+    height: 300px;
+    border: 1px solid black;
+    padding: 45px;
+}
+.uptriangles {
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 70px;
+}
+.triangle h4 {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.triangle span {
+    margin: 0;
+    padding-top: 0;
+    text-align: left;
+    font-size: 16px;
+}
+.triangle .cta {
+    display: flex;
+    width: 125px;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+span.\> {
+    font-size: 21px;
+    margin-top: -2px;
+    font-family: monospace;
+}

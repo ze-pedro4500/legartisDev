@@ -1,0 +1,111 @@
+[ {
+  "id" : "cb49e8b5-2f1c-6cde-faf5-e798e6888049",
+  "name" : "add_custom_id",
+  "display_width" : null,
+  "label" : "Add Custom Id",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "4f5a6dae-3b22-55bb-f7af-1e986f84d124",
+  "name" : "section_background_color",
+  "display_width" : null,
+  "label" : "Section Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "f4c7c56e-45cb-859d-67be-f8bb334af316",
+  "name" : "main_title",
+  "display_width" : null,
+  "label" : "Main Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "TEAM STATISTICS"
+}, {
+  "id" : "fb4d15da-f567-a19c-341d-96456a6f0c93",
+  "name" : "number_counter",
+  "display_width" : null,
+  "label" : "Number Counter",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "3a332dbb-33e8-e011-c142-cf6f59282222",
+    "name" : "number",
+    "display_width" : null,
+    "label" : "Number",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "10"
+  }, {
+    "id" : "3c3f6816-85c0-ba89-a8c7-b797852db3a6",
+    "name" : "number_color",
+    "display_width" : null,
+    "label" : "Number Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#34B791",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "d5032059-9167-2047-355a-7c67b75d68e1",
+    "name" : "number_content",
+    "display_width" : null,
+    "label" : "Number Content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Nationalities"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "number" : "10",
+    "number_color" : {
+      "color" : "#34B791",
+      "opacity" : 100
+    },
+    "number_content" : "Nationalities"
+  }, {
+    "number" : "10",
+    "number_color" : {
+      "color" : "#34B791",
+      "opacity" : 100
+    },
+    "number_content" : "Nationalities"
+  }, {
+    "number" : "10",
+    "number_color" : {
+      "color" : "#34B791",
+      "opacity" : 100
+    },
+    "number_content" : "Nationalities"
+  } ]
+} ]

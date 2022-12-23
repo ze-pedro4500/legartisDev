@@ -1,0 +1,88 @@
+<div class="media-appearance-sec  {{ module.add_custom_class }}" id="{{ module.add_custom_id }}" style="background-color:rgba({{ module.background_color.color|convert_rgb }},calc({{  module.background_color.opacity }}/100));">
+  <div class="container">
+    <div class="media-appearance-inner">
+      <div class="media-appearances-title">
+        <h3>
+          {{ module.title }}
+        </h3>  
+      </div>
+      <div class="media-appearances-wp display-flex">
+        {% if  module.select_tag %}
+        {% set category = module.select_tag|replace('-', ' ') %}
+        {% set  blid = module.select_blog%}
+        {% for category in category %} 
+        {% set contents = blog_recent_topic_posts( blid, category|replace(' ','-'), 100) %} 
+        {% for pop_post in contents %}
+        <div class="outter">
+          <div class="inner">
+            <a href="{{ pop_post.absolute_url }}" class="media-blog-post-link"></a>
+            <div class="image" style="background:url({{ pop_post.featured_image }});background-size: cover; background-position: center; background-repeat: no-repeat;">
+              {# <img src="{{ item.blog_image.src }}" alt="{{ item.blog_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}> #}
+            </div>
+            <div class="detail">
+              <p class="tag">{% for tag in pop_post.tag_list %}
+                <a class="blog-tag-link" href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>{% if not loop.last %},{% endif %}
+                {% endfor %}</p>
+              <h4><a href="#" class="link">{{ pop_post.name }}</a></h4>
+              <div class="content">
+                <p>
+                  {{ pop_post.post_list_content|truncatehtml(176, '..', false)|striptags  }}
+                </p>
+              </div>
+              <div class="date"><p><a class="author-link" href="{{ blog_author_url(group.id, pop_post.blog_post_author.slug) }}">By {{ pop_post.blog_post_author.display_name }} on {{ pop_post.publish_date|datetimeformat( '%e %B %Y' ) }}</a></p></div>
+            </div>
+          </div>
+        </div>      
+        {% endfor %}
+        {% endfor %}
+        {% else %}
+        {% set pop_posts = blog_recent_posts( module.select_blog , 100) %} 
+        {% for pop_post in pop_posts %}
+        <div class="outter">
+          <div class="inner">
+            <a href="{{ pop_post.absolute_url }}" class="media-blog-post-link"></a>
+            <div class="image" style="background:url({{ pop_post.featured_image }});background-size: cover; background-position: center; background-repeat: no-repeat;">
+              {# <img src="{{ item.blog_image.src }}" alt="{{ item.blog_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}> #}
+            </div>
+            <div class="detail">
+              <p class="tag">{% for tag in pop_post.tag_list %}
+                <a class="blog-tag-link" href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>{% if not loop.last %},{% endif %}
+                {% endfor %}</p>
+              <h4><a href="#" class="link">{{ pop_post.name }}</a></h4>
+              <div class="content">
+                <p>
+                  {{ pop_post.post_list_content|truncatehtml(176, '..', false)|striptags  }}
+                </p>
+              </div>
+              <div class="date"><p><a class="author-link" href="{{ blog_author_url(group.id, pop_post.blog_post_author.slug) }}">By {{ pop_post.blog_post_author.display_name }} on {{ pop_post.publish_date|datetimeformat( '%e %B %Y' ) }}</a></p></div>
+            </div>
+          </div>
+        </div> 
+        {% endfor %}
+        {% endif %}
+
+      </div>
+      {% if module.bottom_button.text_field %}
+      <div class="theme-button2">
+        {% set href = module.bottom_button.link_field.url.href %}
+        {% if module.bottom_button.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if module.bottom_button.link_field.no_follow %}
+        {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if module.bottom_button.link_field.open_in_new_tab %}
+        {% do rel.append("noopener") %}
+        {% endif %}
+        <a href="{{ href }}" id="loadMore"
+           {% if module.bottom_button.link_field.open_in_new_tab %}target="_blank"{% endif %}
+           {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+           >
+          {{ module.bottom_button.text_field }}
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

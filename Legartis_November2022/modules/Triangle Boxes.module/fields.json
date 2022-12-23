@@ -1,0 +1,151 @@
+[ {
+  "id" : "a3a181e7-75db-f918-c7c3-a7f3220639ed",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Legartis funktioniert für Legals und Fachabteilungen"
+}, {
+  "id" : "7d35aa1b-9a8a-e5ed-3538-6cee3f228af4",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Die Rechtsabteilung entlasten von Vertragsprüfungen? Von Legartis profitieren nicht nur Rechtsabteilungen. Auch die Kolleg:innen aus den Fachabteilungen können zuverlässig und selbständig Standardverträge prüfen."
+}, {
+  "id" : "4ccc2ee5-ce30-54b3-07dc-4c5345d1213c",
+  "name" : "box",
+  "display_width" : null,
+  "label" : "Box",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 3,
+    "max" : 3,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "49d501bc-7541-f80c-e076-78cc01d269b3",
+    "name" : "box_logo",
+    "display_width" : null,
+    "label" : "Box logo",
+    "required" : true,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://23461626.fs1.hubspotusercontent-na1.net/hubfs/23461626/legal.png",
+      "alt" : "legal",
+      "loading" : "lazy",
+      "width" : 69,
+      "height" : 53,
+      "max_width" : 69,
+      "max_height" : 53
+    }
+  }, {
+    "id" : "2008c7a4-3789-3770-3372-3b9e16304da2",
+    "name" : "box_title",
+    "display_width" : null,
+    "label" : "Box Title",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Für Legal Teams"
+  }, {
+    "id" : "b9f9f352-04c9-c952-fada-85eb9c0ffa96",
+    "name" : "box_text",
+    "display_width" : null,
+    "label" : "Box Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Legartis assistiert Ihnen bei der Vertragsprüfung und erledigt für Sie die repetitiven Aufgaben."
+  }, {
+    "id" : "0c75310a-d318-153a-3a7f-4de1598a89ad",
+    "name" : "box_cta",
+    "display_width" : null,
+    "label" : "Box CTA",
+    "required" : true,
+    "locked" : false,
+    "type" : "cta",
+    "default" : "fcb77abb-2de9-428c-934c-39ed46278936"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "box_logo" : {
+      "size_type" : "auto",
+      "src" : "https://23461626.fs1.hubspotusercontent-na1.net/hubfs/23461626/legal.png",
+      "alt" : "legal",
+      "loading" : "lazy",
+      "width" : 69,
+      "height" : 53,
+      "max_width" : 69,
+      "max_height" : 53
+    },
+    "box_title" : "Für Legal Teams",
+    "box_text" : "Legartis assistiert Ihnen bei der Vertragsprüfung und erledigt für Sie die repetitiven Aufgaben.",
+    "box_cta" : "fcb77abb-2de9-428c-934c-39ed46278936"
+  }, {
+    "box_logo" : {
+      "size_type" : "auto",
+      "src" : "https://23461626.fs1.hubspotusercontent-na1.net/hubfs/23461626/legal.png",
+      "alt" : "legal",
+      "loading" : "lazy",
+      "width" : 69,
+      "height" : 53,
+      "max_width" : 69,
+      "max_height" : 53
+    },
+    "box_title" : "Für Legal Teams",
+    "box_text" : "Legartis assistiert Ihnen bei der Vertragsprüfung und erledigt für Sie die repetitiven Aufgaben.",
+    "box_cta" : "fcb77abb-2de9-428c-934c-39ed46278936"
+  }, {
+    "box_logo" : {
+      "size_type" : "auto",
+      "src" : "https://23461626.fs1.hubspotusercontent-na1.net/hubfs/23461626/legal.png",
+      "alt" : "legal",
+      "loading" : "lazy",
+      "width" : 69,
+      "height" : 53,
+      "max_width" : 69,
+      "max_height" : 53
+    },
+    "box_title" : "Für Legal Teams",
+    "box_text" : "Legartis assistiert Ihnen bei der Vertragsprüfung und erledigt für Sie die repetitiven Aufgaben.",
+    "box_cta" : "fcb77abb-2de9-428c-934c-39ed46278936"
+  } ]
+}, {
+  "id" : "d4afa47c-65e6-ae1e-6242-2f2e813aa055",
+  "name" : "cta_color",
+  "display_width" : null,
+  "label" : "cta color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FF0201",
+    "opacity" : 100
+  }
+} ]

@@ -1,0 +1,202 @@
+[ {
+  "id" : "4ff4998f-718f-3df4-7361-ece09ad1a916",
+  "name" : "background",
+  "display_width" : null,
+  "label" : "Background",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "1", "UniColor" ], [ "2", "Multicolor" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "type" : "choice",
+  "default" : "1"
+}, {
+  "id" : "c4ed37da-be21-1589-5f88-ea9f256f34e0",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background-color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "afe57923-6bb9-d01a-4792-0893bb0a0196",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem"
+}, {
+  "id" : "bcf14703-ce94-8372-8844-6175e07f04e0",
+  "name" : "text",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Unterstutzt von Artificial Intelligence (AI) Designed fur Menschen"
+}, {
+  "id" : "b120ca7e-9644-0a10-a27f-efa2d3345d4d",
+  "name" : "cta_field",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : true,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "bd6d509b-a0c0-4069-9107-b1c22331929b"
+}, {
+  "id" : "c63ab44a-4d90-0a9b-80ce-24961cf68d73",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : true,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://23461626.fs1.hubspotusercontent-na1.net/hubfs/23461626/hp-banner.webp",
+    "alt" : "hp-banner",
+    "loading" : "lazy",
+    "width" : 623,
+    "height" : 641,
+    "max_width" : 623,
+    "max_height" : 641
+  }
+}, {
+  "id" : "fd56109d-72f7-cffa-9108-f414f872ccc5",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : true,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 4,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "https://23461626.fs1.hubspotusercontent-na1.net/hubfs/23461626/energie360.webp",
+    "alt" : "energie360",
+    "loading" : "lazy",
+    "width" : 568,
+    "height" : 110,
+    "max_width" : 568,
+    "max_height" : 110
+  }, {
+    "size_type" : "auto",
+    "src" : "https://23461626.fs1.hubspotusercontent-na1.net/hubfs/23461626/energie360.webp",
+    "alt" : "energie360",
+    "loading" : "lazy",
+    "width" : 568,
+    "height" : 110,
+    "max_width" : 568,
+    "max_height" : 110
+  }, {
+    "size_type" : "auto",
+    "src" : "https://23461626.fs1.hubspotusercontent-na1.net/hubfs/23461626/energie360.webp",
+    "alt" : "energie360",
+    "loading" : "lazy",
+    "width" : 568,
+    "height" : 110,
+    "max_width" : 568,
+    "max_height" : 110
+  }, {
+    "size_type" : "auto",
+    "src" : "https://23461626.fs1.hubspotusercontent-na1.net/hubfs/23461626/energie360.webp",
+    "alt" : "energie360",
+    "loading" : "lazy",
+    "width" : 568,
+    "height" : 110,
+    "max_width" : 568,
+    "max_height" : 110
+  } ]
+}, {
+  "id" : "79aea745-99b5-5ed8-3711-6124b9b7ea8a",
+  "name" : "seconds_between_logos",
+  "display_width" : null,
+  "label" : "Seconds between logos",
+  "help_text" : "Select the seconds you want between the switch in the \"trusted by\" logos",
+  "required" : true,
+  "locked" : false,
+  "display" : "text",
+  "min" : 1,
+  "max" : 10,
+  "step" : 1,
+  "type" : "number",
+  "default" : 1
+}, {
+  "id" : "daf3690d-3f0d-0f77-6587-963b9ddedae2",
+  "name" : "image_mobile",
+  "display_width" : null,
+  "label" : "Image_mobile",
+  "required" : true,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://23461626.fs1.hubspotusercontent-na1.net/hubfs/23461626/hp-banner-mob.webp",
+    "alt" : "hp-banner-mob",
+    "loading" : "lazy",
+    "width" : 623,
+    "height" : 641,
+    "max_width" : 623,
+    "max_height" : 641
+  }
+}, {
+  "id" : "784f0c76-c3c8-598a-48df-b94f13ffccaa",
+  "name" : "cta_color",
+  "display_width" : null,
+  "label" : "cta_color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#D5365E",
+    "opacity" : 100
+  }
+}, {
+  "id" : "9115c3ce-dc2b-791c-d2e0-b5f16446d183",
+  "name" : "corners_color",
+  "display_width" : null,
+  "label" : "corners color",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "4ff4998f-718f-3df4-7361-ece09ad1a916",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "2",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+} ]

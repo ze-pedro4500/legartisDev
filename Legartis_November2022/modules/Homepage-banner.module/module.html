@@ -1,0 +1,157 @@
+{{ require_js("https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js","footer") }}
+<div class="hp-container">
+  <div class="col1">
+    <div class="hpctext">
+      <h1>
+        {% inline_text field="title" value="{{ module.title }}" %}
+      </h1>
+      <span>
+        {% inline_text field="text" value="{{ module.text }}" %}
+      </span>
+      {% cta guid="{{ module.cta_field }}" %}
+    </div>
+    <div class="trustedby">
+      <h3>
+        TRUSTED BY
+      </h3>
+      <div class="tblogos">
+        <!-- Slider main container -->
+        <div class="swiper laswiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            {% for item in module.logo %}
+            <div class="swiper-slide">
+              {% if item.src %}
+              {% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}"' %}
+              {% if item.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}" style="max-width: 100%; height:
+              auto;"' %}
+              {% elif item.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.max_width }}" height="{{ item.max_height }}" style="max-width: 100%;
+              height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading }}"' : '' %}
+              <img src="{{ item.src }}" alt="{{ item.alt }}" {{ loadingAttr }} {{ sizeAttrs }}
+                id="logo{{ loop.index }}">
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="col2">
+    {% if module.image_field.src %}
+    {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+    {% if module.image_field.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"
+    style="max-width: 100%; height: auto;"' %}
+    {% elif module.image_field.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}"
+    style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+    <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+  </div>
+
+</div>
+<div class="hp-container-mobile">
+  <div class="col1">
+    <div class="hpctext">
+      <h1>
+        {% inline_text field="title" value="{{ module.title }}" %}
+      </h1>
+      <span>
+        {% inline_text field="text" value="{{ module.text }}" %}
+      </span>
+      {% cta guid="{{ module.cta_field }}" %}
+    </div>
+    
+  </div>
+  <div class="col2">
+  {% if module.image_field.src %}
+    {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+    {% if module.image_field.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+    {% elif module.image_field.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+     {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+    <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+  {% endif %}
+  </div>
+  <div class="trustedby">
+  <h3>
+    TRUSTED BY
+  </h3>
+  <div class="tblogos">
+    <!-- Slider main container -->
+    <div class="swiper laswiperm">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        {% for item in module.logo %}
+        <div class="swiper-slide">
+          {% if item.src %}
+          {% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}"' %}
+          {% if item.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}" style="max-width: 100%; height:
+          auto;"' %}
+          {% elif item.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.max_width }}" height="{{ item.max_height }}" style="max-width: 100%;
+          height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading }}"' : '' %}
+          <img src="{{ item.src }}" alt="{{ item.alt }}" {{ loadingAttr }} {{ sizeAttrs }}
+            id="logo{{ loop.index }}">
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</div>
+<div class="whitebgside"></div>
+<div class="whitebgflat"></div>
+<div id="group-container" data-url="{{ module.seconds_between_logos }}">
+</div>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+{% require_css %}
+  <style>
+  .hp-container .col1 .hpctext span.hs-cta-wrapper {
+    background-color: {{ module.cta_color.color }};
+    }
+  </style>
+{% end_require_css %}
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const container = document.querySelector('#group-container');
+let sbs = container.dataset.url;
+sbs = sbs*1000;
+const laswiper = new Swiper('.laswiper', {
+    slidesPerView: 4,
+    loop: true,
+    autoplay: {
+          delay: sbs,
+          disableOnInteraction: false,
+        },
+});
+
+const laswiperm = new Swiper('.laswiperm', {
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+          delay: sbs,
+          disableOnInteraction: false,
+        },
+});
+</script>

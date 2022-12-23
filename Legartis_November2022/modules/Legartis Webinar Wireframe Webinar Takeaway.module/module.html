@@ -1,0 +1,60 @@
+<div class="upcoming-webinars take-away-webinars">
+    <span class="center-shape"></span>
+    <div class="container">
+        <div class="heading">
+            {{ module.heading_title }}
+        </div>
+        <div class="webinar-cards">
+            {% for item in module.card_body %}
+            <div class="card-warp">
+                <div class="card-list">
+                    <div class="card-header">
+                        {% set href = item.card_body_link.url.href %}
+                        {% if item.card_body_link.url.type is equalto "EMAIL_ADDRESS" %}
+                        {% set href = "mailto:" + href %}
+                        {% endif %}
+                        <a href="{{ href }}"
+                           {% if item.card_body_link.open_in_new_tab %}target="_blank"{% endif %}
+                           {% if item.card_body_link.rel %}rel="{{ item.card_body_link.rel }}"{% endif %}
+                           >
+                            {% if item.card_body_image.src %}
+                            {% set sizeAttrs = 'width="{{ item.card_body_image.width }}" height="{{ item.card_body_image.height }}"' %}
+                            {% if item.card_body_image.size_type == 'auto' %}
+                            {% set sizeAttrs = 'width="{{ item.card_body_image.width }}" height="{{ item.card_body_image.height }}" style="max-width: 100%; height: auto;"' %}
+                            {% elif item.card_body_image.size_type == 'auto_custom_max' %}
+                            {% set sizeAttrs = 'width="{{ item.card_body_image.max_width }}" height="{{ item.card_body_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                            {% endif %}
+                            {% set loadingAttr = item.card_body_image.loading != 'disabled' ? 'loading="{{ item.card_body_image.loading }}"' : '' %}
+                            <img src="{{ item.card_body_image.src }}" alt="{{ item.card_body_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                            {% endif %}
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        {{ item.card_body_list }}
+                        {% set href = item.card_body_link.url.href %}
+                        {% if item.card_body_link.url.type is equalto "EMAIL_ADDRESS" %}
+                        {% set href = "mailto:" + href %}
+                        {% endif %}
+                        <a href="{{ href }}"
+                           {% if item.card_body_link.open_in_new_tab %}target="_blank"{% endif %}
+                           {% if item.card_body_link.rel %}rel="{{ item.card_body_link.rel }}"{% endif %}
+                           >
+                            {{ item.card_body_link_text }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% require_css %}
+<style>
+    .upcoming-webinars.take-away-webinars{background-color: rgba({{ module.background_color.color|convert_rgb }}, 66%)}
+    .upcoming-webinars.take-away-webinars:before{background-image: url({{ module.shape_image.src }});}
+    .upcoming-webinars.take-away-webinars .center-shape:before{background-image: url({{ module.left_top_shape.src }});}
+    .upcoming-webinars.take-away-webinars:after{background-image: url({{ module.right_shape_image.src }});}
+    .heading h2{color: {{ module.heading_color.color }};}
+    .heading p{color: {{ module.text_color.color }}}
+</style>
+{% end_require_css %}

@@ -1,0 +1,216 @@
+[ {
+  "id" : "70474bb3-b478-1f7b-e32d-7d2bdec28805",
+  "name" : "mod_id",
+  "display_width" : null,
+  "label" : "module id",
+  "help_text" : "There can't be two uses of this module in the same page without changing the id",
+  "required" : true,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number",
+  "default" : 1
+}, {
+  "id" : "96abcd8c-5495-2252-ae92-7fedee8586e2",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "AI-assistierte Vertragsprüfung für den Sales"
+}, {
+  "id" : "ebca25bf-11c6-3319-f7dc-e06b42ba4527",
+  "name" : "subtitle",
+  "display_width" : null,
+  "label" : "Subtitle",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "e5143c3e-e63f-30b7-9248-c0aa0e7e578e",
+  "name" : "image_text",
+  "display_width" : null,
+  "label" : "Image+Text",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "1376c018-4070-18cd-c48b-6453cdf8d0dc",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : true,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://23461626.fs1.hubspotusercontent-na1.net/hubfs/23461626/slider1-1.webp",
+      "alt" : "slider1-1",
+      "loading" : "lazy",
+      "width" : 609,
+      "height" : 627,
+      "max_width" : 609,
+      "max_height" : 627
+    }
+  }, {
+    "id" : "1ad7bd4f-6db9-7aa8-53ed-bac6cca9fbb0",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Beschleunigte Vertragsabschlüsse"
+  }, {
+    "id" : "15a7eaff-16e7-6916-5e8a-9ccf1dc20441",
+    "name" : "subtitle",
+    "display_width" : null,
+    "label" : "Subtitle",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Legartis befähigt auch Mitarbeitende im Sales, Verträge zu prüfen. Für mehr Deals in der gleichen Zeit."
+  }, {
+    "id" : "78cb5f47-cb02-709c-1180-0e0a8e49c54b",
+    "name" : "image_first",
+    "display_width" : null,
+    "label" : "Image first",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "35e207d5-2987-7db2-9c09-50d3783de88e",
+    "name" : "cta_field",
+    "display_width" : null,
+    "label" : "CTA",
+    "required" : false,
+    "locked" : false,
+    "type" : "cta",
+    "default" : "fcb77abb-2de9-428c-934c-39ed46278936"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://23461626.fs1.hubspotusercontent-na1.net/hubfs/23461626/slider1-1.webp",
+      "alt" : "slider1-1",
+      "loading" : "lazy",
+      "width" : 609,
+      "height" : 627,
+      "max_width" : 609,
+      "max_height" : 627
+    },
+    "title" : "Beschleunigte Vertragsabschlüsse",
+    "subtitle" : "Legartis befähigt auch Mitarbeitende im Sales, Verträge zu prüfen. Für mehr Deals in der gleichen Zeit.",
+    "image_first" : true,
+    "cta_field" : "fcb77abb-2de9-428c-934c-39ed46278936"
+  }
+}, {
+  "id" : "6a49f85a-d539-571c-aad4-37faa3232da6",
+  "name" : "background",
+  "display_width" : null,
+  "label" : "Background",
+  "required" : true,
+  "locked" : false,
+  "display" : "radio",
+  "choices" : [ [ "1", "Unicolor" ], [ "2", "Multicolor" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "type" : "choice",
+  "default" : "1"
+}, {
+  "id" : "8a34bc6e-b4f7-4004-3d75-fcd63e834ef5",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "cf86af2f-0cf6-4699-a625-9cc5319ddc78",
+  "name" : "corners_color",
+  "display_width" : null,
+  "label" : "Corners Color",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "6a49f85a-d539-571c-aad4-37faa3232da6",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "2",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "453421c6-9005-217d-6b84-f50c56ae7d3a",
+  "name" : "text_color",
+  "display_width" : null,
+  "label" : "text color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "ba678534-dd8e-20c4-60e5-afe7a3e5fab4",
+  "name" : "button_color",
+  "display_width" : null,
+  "label" : "button color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : null,
+    "opacity" : null
+  }
+}, {
+  "id" : "d47887bb-a20e-88e2-9e45-fcb4a3fc273c",
+  "name" : "title_underline",
+  "display_width" : null,
+  "label" : "title underline",
+  "required" : false,
+  "locked" : false,
+  "show_opacity" : true,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+} ]

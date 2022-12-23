@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 92147931681,
+  "label" : "Sidebar With Content Module",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,115 @@
+<!--
+templateType: blog_post
+isAvailableForNewContent: true
+label: Legartis - Blog Post
+-->
+
+{% set template_css = '../../css/templates/blog.css' %}
+{% extends './layouts/base.html' %}
+
+{% block body %}
+<main id="main-content" class="body-container-wrapper legartis white-header">
+  <div class="body-container body-container--blog-post blog-post-page">
+    <div class="blog-post-banner">
+      <div class="wrapper">
+        <div class="outter-blog-post-banner display-flex">
+          <div class="blog-post-banner-content">
+            <h1> {{ content.name }} </h1>
+            <div class="blog-post-author">
+              {% if content.blog_post_author.avatar %} 
+              <div class="post-author-img">   
+                <a href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}"><img  src="{{ content.blog_post_author.avatar }}" alt="{{ content.blog_post_author.display_name }}"></a> 
+              </div>
+              <div class="blog-post-author-info">
+                <div class="author-name">           
+                  <a class="author-link" href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">{% if group.language == 'EN' %}By {% elif group.language == 'DE' %}Von {% endif %} {{ content.blog_post_author.display_name }} {% if group.language == 'EN' %} on {% else group.language == 'DE' %} am {% endif %}  {{ content.publish_date|datetimeformat( '%e %B %Y' ) }}</a>
+                  {% if content.post_body|wordcount|divide(300) == "0" %}<span class="read-blog">1  {% if group.language == 'EN' %} Min Read {% elif group.language == 'DE' %} Min. Lesezeit {% endif %} </span>{% else %}<span class="read-blog">{{ content.post_body|wordcount|divide(300) }}{% if group.language == 'EN' %} Min Read {% else group.language == 'DE' %} Min. Lesezeit {% endif %}</span>{% endif %}
+                </div>     
+                <div class="hs-author-social-links">
+                  {% if blog_author.facebook %}
+                  <a href="{{ blog_author.facebook }}" target="_blank" class="hs-author-social-link hs-social-facebook"><img src="https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/iconmonstr-linkedin-4.svg"></a> 
+                  {% endif %}
+                  {% if blog_author.twitter %}
+                  <a href="{{ blog_author.twitter }}" target="_blank" class="hs-author-social-link hs-social-twitter"><img src="https://f.hubspotusercontent00.net/hubfs/4640853/Legartis_January2021/images/iconmonstr-facebook-4.svg" ></a>  
+                  {% endif %}
+                </div>
+              </div>
+              {% endif %}
+            </div>
+          </div>
+          <div class="blog-post-outter-img-sec">
+            <div class="blog-post-banner-img">
+              <img src="{{ content.post_list_summary_featured_image }}" alt="{{ content.featured_image_alt_text | escape }}">
+            </div>
+          </div>       
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-post-content-sec">
+      <div class="wrapper">  
+      {#  <div class="blog-post-content">
+          {{ content.post_body }}
+          {% if content.tag_list %}
+          <div class="blog-tags">
+            {% for tag in content.tag_list %}
+            <a class="blog-tag-link" href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>{% if not loop.last %},{% endif %}
+            {% endfor %}
+          </div>
+          {% endif %}    
+        </div> #}
+        
+        {% module "module_16438017907534" path="/Legartis_April2021/modules/Blog Post Content Module", label="Blog Post Content Module" %}
+        
+        <div class="blog-post-related-post">
+          <h3> {% if group.language == 'EN' %} Recommended Articles {% elif group.language == 'DE' %} Empfohlene Artikel {% endif %}</h3>
+          <div class="inner-blog-index display-flex">
+            {% for topic in content.topic_list %}
+            {% if loop.first %}
+            {% set related_posts = blog_recent_topic_posts('default', topic.slug, 4 ) %}
+            {% for pop_post in related_posts %}
+            {% unless content.absolute_url == pop_post.absolute_url %}
+            <div class="blog-index-box">
+              <a href="{{pop_post.absolute_url}}" class="blog-index-link"> </a>
+              <div class="blog-featured-img" style="background-image:url('{{ pop_post.featured_image }}')"></div>
+              <div class="blog-post-info">
+                <div class="blog-tags">
+                  {% for tag in pop_post.tag_list %}
+                  <a class="blog-tag-link" href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>{% if not loop.last %},{% endif %}
+                  {% endfor %}
+                </div>
+                <div class="blog-post-title">
+                  <h4>{{ pop_post.name }}</h4>
+                  <p>{{ pop_post.post_list_content|truncatehtml(176, '..', false)|striptags  }}</p>
+                </div>
+                {% if content.blog_post_author %}
+                <div class="author-name">           
+                  <a class="author-link" href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">{% if group.language == 'EN' %}By {% elif group.language == 'DE' %}Von {% endif %} {{ pop_post.blog_post_author.display_name }} {% if group.language == 'EN' %} on {% else group.language == 'DE' %} am {% endif %} {{ pop_post.publish_date|datetimeformat( '%e %B %Y' ) }}</a>
+                </div>              
+                {% endif %} 
+              </div>
+            </div> 
+            {% endunless %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %}   
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="latest-news">
+      <div class="wrapper">
+        <div class="outter-latest-news display-flex">
+          <div class="latest-news-text">
+            <h3>  {% if group.language == 'EN' %} Subscribe to the Legartis Newsletter {% elif group.language == 'DE' %} Abonnieren Sie den Legartis-Newsletter {% endif %} </h3>
+            <p>  {% if group.language == 'EN' %} Sign up for our newsletter and benefit from the latest insights from the world of LegalTech, artificial intelligence and contract review automation. {% elif group.language == 'DE' %} Melden Sie sich für unseren Newsletter an und profitieren Sie von den neuesten Erkenntnissen aus der Welt von LegalTech, künstlicher Intelligenz und automatisierter Vertragsprüfung. {% endif %} </p>
+          </div>
+          <div class="latest-news-form">
+            {% module "module_16213313674099" path="/Legartis_April2021/modules/blog_subscribe Legartis", label="blog_subscribe Legartis" %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock body %}

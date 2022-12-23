@@ -1,0 +1,352 @@
+{{ require_js("https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js","footer") }}
+<div class="slider">
+  <h3>
+    {% inline_text field="h1" value="{{ module.h1 }}" %}
+  </h3>
+  {% if module.type_of_slider == 1 %}
+  <!-- Slider main container -->
+  <div class="swiper1 swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      {% for item in module.slide %}
+      <div class="swiper-slide">
+        <div class="slide_content">
+
+          <div class="slider_img1">
+            {% if item.image_field.src %}
+            {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+            {% if item.image_field.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"
+            style="max-width: 100%; height: auto;"' %}
+            {% elif item.image_field.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}"
+            style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' :
+            ''
+            %}
+            <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <div class="slider_text1">
+            <h2>
+
+              {% inline_text field="text_field" value="{{ item.text_field }}" %}
+            </h2>
+            <span>
+              {% inline_text field="slider_text" value="{{ item.slider_text }}" %}
+            </span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  {% elif module.type_of_slider == 2 %}
+  <!-- Slider main container -->
+  <div class="swiper2 swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      {% for item in module.slide %}
+      <div class="swiper-slide">
+        <div class="slide_content">
+          <div class="slider_text2">
+            <h2>
+              {% inline_text field="text_field" value="{{ item.text_field }}" %}
+            </h2>
+            <span class="quote">
+              <br>
+              {% inline_text field="quote" value="{{ item.quote }}" %}
+            </span>
+
+            <span class="signature">
+              {% inline_text field="signature" value="{{ item.signature }}" %}
+            </span>
+            <div class="slider_logo">
+              {% if item.company_logo.src %}
+              {% set sizeAttrs = 'width="{{ item.company_logo.width }}" height="{{ item.company_logo.height }}"' %}
+              {% if item.company_logo.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ item.company_logo.width }}" height="{{ item.company_logo.height }}"
+              style="max-width: 100%; height: auto;"' %}
+              {% elif item.company_logo.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.company_logo.max_width }}" height="{{ item.company_logo.max_height }}"
+              style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = item.company_logo.loading != 'disabled' ? 'loading="{{ item.company_logo.loading }}"'
+              :
+              '' %}
+              <img src="{{ item.company_logo.src }}" alt="{{ item.company_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs
+                }}>
+              {% endif %}
+            </div>
+          </div>
+          <div class="slider_img2 " style="background: url({{ item.image_field.src }}) no-repeat center center/cover;">
+          </div>
+          
+          </div>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  {% elif module.type_of_slider == 3 %}
+  <!-- Slider main container -->
+  <div class="swiper3 swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      {% for item in module.slide %}
+      <div class="swiper-slide">
+        <div class="slide_content">
+          <div class="slider_img_full">
+            {% if item.image_field.src %}
+            {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+            {% if item.image_field.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"
+            style="max-width: 100%; height: auto;"' %}
+            {% elif item.image_field.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}"
+            style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' :
+            ''
+            %}
+            <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  {% else %}
+
+
+
+ <!-- Slider main container -->
+ <div class="swiper4 swiper">
+ <div class="topleft"></div>
+<div class="topright"></div>
+ <!-- Additional required wrapper -->
+ <div class="swiper-wrapper">
+   {% for item in module.slide %}
+   <div class="swiper-slide">
+     <div class="slide_content">
+     <div class="slider_text1">
+     <h1>	{% inline_text field="big_title" value="{{ item.big_title }}" %}</h1>
+       <h2>
+
+         {% inline_text field="text_field" value="{{ item.text_field }}" %}
+       </h2>
+       <span>
+         {% inline_text field="slider_text" value="{{ item.slider_text }}" %}
+       </span>
+     </div>
+       <div class="slider_img1">
+         {% if item.image_field.src %}
+         {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+         {% if item.image_field.size_type == 'auto' %}
+         {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"
+         style="max-width: 100%; height: auto;"' %}
+         {% elif item.image_field.size_type == 'auto_custom_max' %}
+         {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}"
+         style="max-width: 100%; height: auto;"' %}
+         {% endif %}
+         {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' :
+         ''
+         %}
+         <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+         {% endif %}
+       </div>
+       
+     </div>
+   </div>
+   {% endfor %}
+ </div>
+ <!-- If we need navigation buttons -->
+ <div class="swiper-button-prev"></div>
+ <div class="swiper-button-next"></div>
+ <div class="swiper-pagination"></div>
+</div>
+
+
+
+
+  {% endif %}
+  {% require_css %}
+  <style>
+    .swiper {
+      background-color: {
+          {
+          module.section_color.color
+        }
+      };
+    }
+    .swiper4.swiper{
+      background-color:{{ module.bg_color1.color }}
+    }
+    .swiper h1, .swiper h2, .swiper span {
+      color: {{ module.text_color.color }};
+    }
+    .swiper4 h1 {
+    border-bottom: 1px solid {{ module.underline_color.color }};
+    width: fit-content;
+}
+.swiper4 .topright {
+ background-color: {{ module.bg_color_2.color }};
+}
+.swiper4 .topleft {
+ background-color: {{ module.bg_color_2.color }};
+}
+.swiper4 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: {{ module.title_underline }};
+}
+  </style>
+  {% end_require_css %}
+  {% if module.type_of_slider == 1 %}
+  {% require_js position="footer" %}
+  <script type="text/javascript">
+    const swiper = new Swiper('.swiper1', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
+{% end_require_js %}
+
+  {% elif module.type_of_slider == 2 %}
+    {% require_js position="footer" %}
+    <script type="text/javascript">
+    const swiper2 = new Swiper('.swiper2', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
+{% end_require_js %}
+  {% elif module.type_of_slider == 3 %}
+  <script type="text/javascript">
+  {% require_js position="footer" %}
+    var w = window.innerWidth;
+    if (w >= 1000) {
+      const swiper3 = new Swiper('.swiper3', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 6,
+        spaceBetween: 30,
+        freeMode: true,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    }
+    else if (w >= 700) {
+      const swiper3 = new Swiper('.swiper3', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        freeMode: true,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    }
+    else {
+      const swiper3 = new Swiper('.swiper3', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 30,
+        freeMode: true,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    }
+  </script>
+{% end_require_js %}
+{% elif module.type_of_slider == 4 %}
+  {% require_js position="footer" %}
+    <script type="text/javascript">
+      const swiper = new Swiper('.swiper4', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+  
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+  
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+  
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
+  {% end_require_js %}
+  {% endif %}

@@ -1,0 +1,219 @@
+.topright{
+    height: 100px;
+    transform: rotate(4deg);
+    margin-right: -100px;
+    margin-top: -135px;
+    margin-bottom: 100px;
+}
+span.swiper-pagination-bullet {
+    width: 40px;
+    border-radius: 0px;
+}
+.topleft {
+    height: 100px;
+    transform: rotate(-5deg);
+    margin-left: -43px;
+    margin-top: -134px;
+    margin-bottom: 100px;
+}
+.swiper-button-next, .swiper-button-prev {
+  height: 50px !important;
+width: 50px !important;
+  padding: 13px;
+  border-radius: 34px;
+  font-weight:700;
+  box-shadow:0 5px 10px #00000038;
+}
+:root {
+    --swiper-navigation-size: 20px !important;
+    --swiper-theme-color: black !important;
+}
+.swiper4 .swiper-button-next,.swiper4 .swiper-button-prev{
+  box-shadow:none;
+}
+.swiper4 .slider_text1,.swiper4 .slider_text2 {
+    align-items: center;
+    margin-bottom: auto;
+    margin-left: 0px;
+    text-align: left;
+}
+.swiper4 .slider_text1 {
+  width: 50%;
+}
+.swiper3 .swiper-button-prev,.swiper3 .swiper-button-next{
+  filter: grayscale(1);
+}
+.slider {
+  min-height:300px;
+}
+.slider_img_full {
+    padding: 0% 20%;
+    height:100px;
+    display:flex;
+    margin-top: 10px;
+    
+}
+.slider_img_full img {
+    min-width:130px;
+    filter: grayscale(1);
+    align-self:center;
+}
+.slide_content:has(.slider_img2) {
+      width: 100%;
+      height:520px;
+  }
+.slider_img1 {
+  width:32%;
+}
+.slider_img2 {
+  width:50%;
+  margin-top:30px;
+}
+.slider_logo img {
+  height:50px !important;
+  width:auto;
+}
+.slider_img_full {
+  width:100%;
+}
+.slider_img_full img {
+  width:100%;
+}
+.slider_text1{
+  align-items: center;
+  padding-right: 30px;
+  text-align: left;
+  width: 35%;
+  margin-left: 10%;
+  margin-top: auto;
+  padding-bottom: 40px;
+  margin-bottom: auto;
+}
+.slider_text2{
+  align-items: center;
+  padding-right: 50px;
+  text-align: left;
+  width: 39%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left:10%;
+  margin-top:30px;
+
+}
+.slider_logo {
+    padding-top: 20px;
+}
+.swiper-slide {
+  display:flex;
+  justify-content: center;
+}
+.slide_content {
+  display: flex;
+  justify-content:center;
+}
+
+.slider h3 {
+    text-align: center;
+    padding-top: 60px;
+}
+.quote {
+  position:relative;
+}
+.quote::before {
+  background: url(https://4640853.fs1.hubspotusercontent-na1.net/hubfs/4640853/Lp%202020/images/Asset-28.png) no-repeat 50%;
+    background-size: contain;
+    content: "";
+    height: 30px;
+    position: absolute;
+    width: 30px;
+
+}
+.quote::after {
+  background: url(https://4640853.fs1.hubspotusercontent-na1.net/hubfs/4640853/Lp%202020/images/Asset-28.png) no-repeat 50%;
+    background-size: contain;
+    content: "";
+    height: 30px;
+    position: absolute;
+    width: 30px;
+    bottom: -30px;
+    right:0px;
+    transform: rotate(180deg);
+}
+.signature div {
+    padding-top: 40px;
+}
+@media only screen and (max-width: 1400px) {
+  .slider_text2 {
+    width:50%;
+    margin-left:5%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .slide_content:has(.slider_img2) {
+    height: 580px;
+}
+}
+@media only screen and (max-width: 500px) {
+  :root {
+    --swiper-navigation-size: 20px !important;
+}
+  .slide_content:has(.slider_img2) {
+    height: unset;
+}
+  .slider_logo {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+  .quote:before {
+    display: block;
+}
+  .slider_img1 {
+    width: 100%;
+}
+.slider_img2 {
+  width: 100%;
+  height:250px;
+}
+.slide_content {
+    display: block;
+    max-width: 1465px;
+}
+.slider_text1 {
+    align-items: center;
+    margin: auto;
+    max-width: 646px;
+    padding-right: 0px;
+    text-align: center;
+    width: 85%;
+}
+.slider_text2 {
+    align-items: center;
+    margin: auto;
+    max-width: 646px;
+    padding-right: 0px;
+    text-align: center;
+    width: 85%;
+    padding-top:30px;
+}
+.slider_logo img {
+    height: 30px!important;
+}
+.slider_text1 span {
+    font-size: 16px;
+}
+.quote, .signature {
+    font-size: 16px;
+    font-weight:700;
+}
+.quote:after, .quote:before {
+    height: 20px;
+    width: 20px;
+}
+.slider h3 {
+    padding-top: 50px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-bottom:20px;
+}
+}

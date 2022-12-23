@@ -1,0 +1,11 @@
+.triangleboxes h1 {
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    line-height: 50px;
+}
+.triangleboxes span {
+    font-size: 18px;
+}

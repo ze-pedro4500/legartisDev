@@ -1,0 +1,36 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: LEGARTIS -  Webinar
+  
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+<main id="main-content" class="body-container-wrapper">
+    
+    
+{% dnd_area 'dnd_area' %}
+    {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+        {% dnd_module path="../modules/Legartis Webinar Wireframe Hero Banner" %} {% end_dnd_module %}
+    {% end_dnd_section %} 
+    
+    {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+        {% dnd_module path="../modules/Legartis Webinar Wireframe Stay Up Webinars" %} {% end_dnd_module %}
+    {% end_dnd_section %} 
+    
+    {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+        {% dnd_module path="../modules/Legartis Webinar Wireframe Upcoming Webinars" %} {% end_dnd_module %}
+    {% end_dnd_section %}
+    
+    {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+        {% dnd_module path="../modules/Legartis Webinar Wireframe Webinar Takeaway" %} {% end_dnd_module %}
+    {% end_dnd_section %}
+    
+    {% dnd_section full_width = true, padding={'right':0, 'left': 0, 'top':0, 'bottom':0 } %}
+        {% dnd_module path="../modules/Legartis Webinar Wireframe speakers" %} {% end_dnd_module %}
+    {% end_dnd_section %}
+    
+{% end_dnd_area %}
+</main>
+{% endblock body %}
