@@ -1,0 +1,15 @@
+<div class="qctacont">
+  <div class="topleft"></div>
+<div class="topright"></div>
+  <div class="txtcta">
+    <h2>
+      {% inline_text field="question" value="{{ module.question }}" %}
+    </h2>
+    {% cta guid="{{ module.cta_field }}" %}
+  </div>
+</div>
+<style>
+.qctacont span.hs-cta-node {
+    background-color: {{ module.cta_color.color }};
+    }
+</style>

@@ -1,0 +1,187 @@
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<div class="itscontainer{{ module.mod_id }}" style="margin-bottom:-150px">
+<div class="topleft"></div>
+<div class="topright"></div>
+<div class="imateconta">
+	<div class="imatecontamaintxt">
+		<h1>
+			{% inline_text field="title" value="{{ module.title }}" %}
+		</h1>
+		<span>
+			{% inline_text field="subtitle" value="{{ module.subtitle }}" %}
+		</span>
+	</div>
+	{% for item in module.image_text %}
+	<div class="imate">
+	
+		{% if item.image_first %}
+		<div class="imgdiv">
+			{% if item.image_field.src %}
+			{% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+			{% if item.image_field.size_type == 'auto' %}
+			{% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"
+			style="max-width: 100%; height: auto;"' %}
+			{% elif item.image_field.size_type == 'auto_custom_max' %}
+			{% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}"
+			style="max-width: 100%; height: auto;"' %}
+			{% endif %}
+			{% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' :
+			'' %}
+			<img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+			{% endif %}
+		</div>
+		<div class="imatext" data-aos="fade-left" data-aos-duration="1000" data-aos-mirror="true">
+		<div class="slidetitle">
+		{% if module.order_nr %}
+			<h1>{{ loop.index }}</h1>
+			<h3>.</h3>
+		{% endif %}
+			<h2>{% inline_text field="title" value="{{ item.title }}" %}</h2>
+				</div>
+			<span>{% inline_text field="subtitle" value="{{ item.subtitle }}" %}</span>
+				<ul>
+				{% for item2 in item.bullet_point %}
+
+					<li>{% inline_text field="bullet_point" value="{{ item2 }}" %}</li>
+				{% endfor %}
+				</ul>
+			{% cta guid="{{ item.cta_field }}" %}
+		</div>
+		{% else %}
+		<div class="imatext" data-aos="fade-right" data-aos-duration="1000" data-aos-mirror="true">
+		<div class="slidetitle">
+		{% if module.order_nr %}
+			<h1>{{ loop.index }}</h1>
+			<h3>.</h3>
+		{% endif %}
+			<h2>{% inline_text field="title" value="{{ item.title }}" %}</h2>
+				</div>
+			<span>{% inline_text field="subtitle" value="{{ item.subtitle }}" %}</span>
+				<ul>
+				{% for item2 in item.bullet_point %}
+
+					<li>{% inline_text field="bullet_point" value="{{ item2 }}" %}</li>
+				{% endfor %}
+				</ul>
+			{% cta guid="{{ item.cta_field }}" %}
+		</div>
+		<div class="imgdiv">
+			{% if item.image_field.src %}
+			{% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+			{% if item.image_field.size_type == 'auto' %}
+			{% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"
+			style="max-width: 100%; height: auto;"' %}
+			{% elif item.image_field.size_type == 'auto_custom_max' %}
+			{% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}"
+			style="max-width: 100%; height: auto;"' %}
+			{% endif %}
+			{% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' :
+			'' %}
+			<img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+			{% endif %}
+		</div>
+		{% endif %}
+	</div>
+	{% endfor %}
+</div>
+<!-- MOBILE -->
+<div class="imatecontamobile">
+	<div class="imatecontamaintxt">
+		<h1>
+			{% inline_text field="title" value="{{ module.title }}" %}
+		</h1>
+		<span>
+			{% inline_text field="subtitle" value="{{ module.subtitle }}" %}
+		</span>
+	</div>
+	{% for item in module.image_text %}
+	<div class="imate">
+		<div class="imgdiv" data-aos="fade-right" data-aos-duration="1000" data-aos-mirror="true">
+			{% if item.image_field.src %}
+			{% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+			{% if item.image_field.size_type == 'auto' %}
+			{% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"
+			style="max-width: 100%; height: auto;"' %}
+			{% elif item.image_field.size_type == 'auto_custom_max' %}
+			{% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}"
+			style="max-width: 100%; height: auto;"' %}
+			{% endif %}
+			{% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' :
+			'' %}
+			<img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+			{% endif %}
+		</div>
+		<div class="imatext" data-aos="fade-left" data-aos-duration="1000" data-aos-mirror="true">
+		<div class="slidetitle">
+		{% if module.order_nr %}
+			<h1>{{ loop.index }}</h1>
+			<h3>.</h3>
+		{% endif %}
+			<h2>{% inline_text field="title" value="{{ item.title }}" %}</h2>
+				</div>
+			<span>{% inline_text field="subtitle" value="{{ item.subtitle }}" %}</span>
+				<ul>
+				{% for item2 in item.bullet_point %}
+
+					<li>{% inline_text field="bullet_point" value="{{ item2 }}" %}</li>
+				{% endfor %}
+				</ul>
+			{% cta guid="{{ item.cta_field }}" %}
+		</div>
+
+	</div>
+	{% endfor %}
+</div>
+<div class="bottomleft"></div>
+<div class="bottomright"></div>
+</div>
+{% require_css %}
+  <style>
+  .itscontainer{{ module.mod_id }} {
+    background-color: {{ module.background_color.color }} ;
+    }
+    .itscontainer{{ module.mod_id }} .topleft, .topright, .bottomleft, .bottomright {
+      background-color: {{ module.corners_color.color }};
+    }
+    .itscontainer{{ module.mod_id }} h1,.itscontainer{{ module.mod_id}} h2,.itscontainer{{ module.mod_id }} span {
+      color:{{ module.text_color.color }};
+    }
+    .itscontainer{{ module.mod_id }} .imate .cta_button{
+     background-color: {{ module.button_color }};
+    }
+    .itscontainer{{ module.mod_id }} .imatecontamaintxt h1 {
+    border-bottom: 1px solid {{ module.title_underline.color }};
+    }
+	{% if module.order_nr %}
+	@media only screen and (max-width: 1000px) {
+	.slidetitle h2 {
+    text-align: left;
+}
+.imatext span div {
+    text-align: left;
+}
+.imatext span {
+    margin: unset;
+	}
+	.imatext {
+    width: fit-content;
+}
+.slidetitle {
+    width: 450px;
+}
+.imatext span {
+    width: 450px;
+}
+ul li {
+    font-size: 22px;
+    font-weight: 500;
+}
+	}
+	{% endif %}
+
+  </style>
+{% end_require_css %}
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>

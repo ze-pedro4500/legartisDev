@@ -1,0 +1,30 @@
+<div class="vidrevcont">
+  <div class="col1">
+    {% if module.videoplayer_field.player_id %}
+  {% set max_width = module.videoplayer_field.size_type == 'auto_custom_max' ? module.videoplayer_field.max_width : module.videoplayer_field.width %}
+  {% set max_height = module.videoplayer_field.size_type == 'auto_custom_max' ? module.videoplayer_field.max_height : module.videoplayer_field.height %}
+  {% video_player "embed_player"
+    player_id={{ module.videoplayer_field.player_id }}
+    type={{ module.videoplayer_field.player_type || 'scriptV4' }}
+    full_width={{ module.videoplayer_field.size_type == 'auto_full_width' }},
+    conversion_asset={{ module.videoplayer_field.conversion_asset|tojson|safe }}
+    autoplay={{ module.videoplayer_field.autoplay }}
+    hidden_controls={{ module.videoplayer_field.hide_controls }}
+    loop={{ module.videoplayer_field.loop_video }}
+    muted={{ module.videoplayer_field.mute_by_default }}
+  %}
+{% endif %}
+  </div>
+  <div class="col2">
+    <div class="txt">
+      <h4>
+        {% inline_text field="name_review" value="{{ module.name_review }}" %}
+      </h4>
+      <span>
+        {% inline_text field="job_title" value="{{ module.job_title }}" %}
+        {% inline_text field="company" value="{{ module.company }}" %}
+      </span>
+    </div>
+  </div>
+  
+</div>

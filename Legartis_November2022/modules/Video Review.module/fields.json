@@ -1,0 +1,54 @@
+[ {
+  "id" : "009d65a5-a6e1-6c17-3e0f-4303518e5447",
+  "name" : "videoplayer_field",
+  "display_width" : null,
+  "label" : "Video",
+  "required" : true,
+  "locked" : false,
+  "resizable" : true,
+  "show_preview" : true,
+  "show_advanced_options" : false,
+  "type" : "videoplayer",
+  "default" : {
+    "player_id" : 93340310849,
+    "height" : 1080,
+    "width" : 1920,
+    "player_type" : "hsvideo2"
+  }
+}, {
+  "id" : "75a3396f-dca3-77ec-09a1-b4ba50df6ab6",
+  "name" : "name_review",
+  "display_width" : null,
+  "label" : "Name",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Dr. Marc Hansmann"
+}, {
+  "id" : "c17cb561-34fb-269c-0170-7107155b3942",
+  "name" : "job_title",
+  "display_width" : null,
+  "label" : "Job title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Job Title"
+}, {
+  "id" : "79be882c-7744-f9fd-0377-33fdc4948b4e",
+  "name" : "company",
+  "display_width" : null,
+  "label" : "Company",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Company"
+} ]

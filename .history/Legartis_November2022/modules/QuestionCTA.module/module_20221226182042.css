@@ -1,0 +1,10 @@
+.qctacont h2 {
+    font-size: 30px;
+}
+.qctacont .txtcta {
+    font-size: 30px;
+    display: flex;
+    width: 45%;
+    margin: auto;
+    justify-content: space-around;
+}

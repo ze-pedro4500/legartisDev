@@ -1,0 +1,30 @@
+.qctacont h2 {
+    font-size: 30px;
+    margin-bottom:0px;
+}
+.qctacont .txtcta {
+    font-size: 30px;
+    display: flex;
+    width: 45%;
+    margin: auto;
+    justify-content: space-around;
+}
+.qctacont {
+   margin-top:250px;
+   height: 450px;
+}
+.txtcta span {
+    font-size: 16px;
+    display: block;
+}
+.qctacont span.hs-cta-node {
+    height: 39px;
+    padding: 10px 20px;
+    border-radius: 11px;
+}
+.qctacont span.hs-cta-wrapper {
+    margin-top: 11px;
+}
+.qctacont a {
+    color: white;
+}

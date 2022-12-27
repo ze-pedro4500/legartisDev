@@ -1,0 +1,26 @@
+<div class="threerevcont">
+  <h1>
+  {% inline_text field="title" value="{{ module.title }}" %} <div class="underline">{% inline_text field="underline_title" value="{{ module.underline_title }}" %}</div>
+</h1>
+  <div class="revcont">
+    {% for item in module.reviewbox %}
+  <div class="revbox">
+    <span class="revtext">
+    {% inline_text field="review" value="{{ item.review }}" %}
+    </span>
+    <span class="name">
+    {% inline_text field="assinatura" value="{{ item.assinatura }}" %}
+    </span>
+    <span class="jobtitle">
+    {% inline_text field="job_title" value="{{ item.job_title }}" %}
+    </span>
+    <span>
+    {% inline_text field="unternehmen" value="{{ item.unternehmen }}" %}
+    </span>
+    </div>
+{% endfor %}
+  </div>
+  <div class="bottomleft"></div>
+<div class="bottomright"></div>
+</div>
+

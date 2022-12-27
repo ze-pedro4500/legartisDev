@@ -1,0 +1,15 @@
+.col1 .hs-video-widget {
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+}
+.col1 {
+    width: 40%;
+}
+.col2 {
+    width: 40%;
+}
+.vidrevcont {
+    display: flex;
+    justify-content: space-evenly;
+}

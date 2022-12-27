@@ -1,0 +1,182 @@
+li ::marker {
+    color:#B54D61;
+}
+ul li {
+    padding-left:0px;
+    font-size:16px;
+    font-weight:600;
+}
+.imateconta .slidetitle h1 {
+    font-size: 100px;
+    font-weight: 300;
+}
+.imateconta .slidetitle h3 {
+    font-size: 100px;
+    font-weight: 300;
+    margin-right: 15px;
+}
+.slidetitle {
+    display: flex;
+}
+.itscontainer{
+    margin-bottom:-110px;
+}
+.topright{
+    background-color: red;
+    height: 100px;
+    transform: rotate(4deg);
+    margin-right: -100px;
+    margin-top: -135px;
+    margin-bottom: 100px;
+}
+.bottomleft {
+    background-color: red;
+    height: 150px;
+    transform: rotate(4deg);
+    margin-right: 0px;
+    margin-top: 92px;
+    margin-bottom: 0px;
+    margin-left: -201px;
+}
+.bottomright {
+    background-color: red;
+    height: 150px;
+    transform: rotate(-5deg);
+    margin-right: -34px;
+    margin-top: -100px;
+    margin-bottom: 0px;
+    margin-left: -101px;
+}
+
+.topleft {
+    background-color: red;
+    height: 100px;
+    transform: rotate(-5deg);
+    margin-left: -43px;
+    margin-top: -134px;
+    margin-bottom: 100px;
+}
+.imate {
+    display: flex;
+    justify-content: space-between;
+}
+.imateconta h1 {
+    font-size:42px;   
+}
+.imateconta span {
+    font-size:18px;
+}
+.imateconta h2 {
+    font-size:32px;   
+    margin-bottom: 0px;
+    line-height: 39px;
+}
+.imateconta span div {
+    padding-bottom: 25px;
+    width:65%;
+}
+.imateconta {
+    padding: 10px 10%;
+}
+.imatecontamaintxt h1 {
+    font-weight: bold;
+    line-height:50px;
+  font-weight: 700;
+    line-height: 50px;
+    width: 50%;
+    border-bottom: 1px solid red;
+    padding-bottom: 15px;
+}
+.imatext {
+    width: 50%;
+    margin:auto;
+}
+.imateconta .imatext h2 {
+    font-size: 32px;
+    margin-bottom: 0;
+    line-height: 39px;
+    margin-bottom: 15px;
+}
+.imate .cta_button {
+    color: white;
+    background-color: blue;
+    font-family: 'Raleway';
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 11px;
+    width:150px;
+    height:40px;
+}
+.hs-cta-node a:hover {
+    text-decoration: none;
+}
+.imate .imgdiv img {
+    width: 100%;
+}
+.imatecontamobile{
+    display:none; 
+}
+.imgdiv {
+    width:50%;
+}
+.imatext {
+    width:45%;
+}
+@media only screen and (max-width: 1700px) {
+    .imateconta {
+        padding: 10px 7%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .imatecontamobile{
+    display:block; 
+}
+.imgdiv {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.imateconta{
+    display:none; 
+}
+.imatecontamobile .imatecontamaintxt h1 {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+.imatecontamobile .imatecontamaintxt span {
+    text-align: center;
+    width: 85%;
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+.imate {
+    display: block;
+    margin-bottom:90px;
+}
+.imate .imgdiv img {
+    width: 500px;
+    margin: auto;
+    display: block;
+}
+.imatext {
+    margin-top: -30px;
+}
+.imatext h2 {
+    text-align: center;
+    margin-bottom:15px;
+}
+.imatext {
+    width: 90%;
+}
+.imatext span {
+    text-align: center;
+    width: 85%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+}

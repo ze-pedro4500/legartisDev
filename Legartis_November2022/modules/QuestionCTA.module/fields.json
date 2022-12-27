@@ -1,0 +1,58 @@
+[ {
+  "id" : "06e002af-633e-a7b0-02ad-0da38af75f5b",
+  "name" : "question",
+  "display_width" : null,
+  "label" : "Question",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Sie möchten Legartis live erleben?"
+}, {
+  "id" : "33b11f28-6366-5369-0042-b97d344549f1",
+  "name" : "cta_field",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : true,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "bd6d509b-a0c0-4069-9107-b1c22331929b"
+}, {
+  "id" : "fdd5987b-ed94-95ff-34ea-4c372bc5dd2e",
+  "name" : "bg_color1",
+  "display_width" : null,
+  "label" : "BG Color1",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#0600FF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "53d4b3d6-4c9c-f2fa-cb54-3ad976aa8c5f",
+  "name" : "bg_color2",
+  "display_width" : null,
+  "label" : "BG Color2",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "ce01f684-7ef5-d3a6-4ebc-0aaadbbe8b14",
+  "name" : "cta_color",
+  "display_width" : null,
+  "label" : "CTA Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FF0201",
+    "opacity" : 100
+  }
+} ]

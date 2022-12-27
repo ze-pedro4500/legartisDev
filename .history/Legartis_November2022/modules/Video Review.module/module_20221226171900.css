@@ -1,0 +1,44 @@
+.col1 .hs-video-widget {
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+}
+.col1 {
+    width: 40%;
+}
+.col2 {
+    width: 40%;
+}
+.vidrevcont {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:160px;
+}
+.txt {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.txt h4 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.txt span div {
+    margin-right: 7px;
+    font-size: 20px;
+}
+.txt span {
+    display: flex;
+}
+@media only screen and (max-width: 500px) {
+    .vidrevcont {
+    display: block;
+}
+.col1, .col2 {
+    width: 90%;
+    margin: auto;
+}
+}

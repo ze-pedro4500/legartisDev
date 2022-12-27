@@ -1,0 +1,29 @@
+.threerevcont h1 {
+    display:flex;
+    justify-content: center;
+    color:white;
+    margin-bottom: 70px;
+    font-weight:600;
+}
+.aspas {
+    color: #d3d9f8;
+    font-family: Montserrat;
+    font-size: 102px;
+    display: block;
+    position: relative;
+    height: 80px;
+    margin-top: -30px;
+}
+.revcont {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    max-width: 1400px;
+}
+.revbox {
+    height: 320px;
+    width: 350px;
+    background-color: white;
+    padding: 23px;
+}

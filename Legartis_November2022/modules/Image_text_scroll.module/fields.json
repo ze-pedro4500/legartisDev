@@ -102,6 +102,24 @@
     "type" : "boolean",
     "default" : true
   }, {
+    "id" : "3a2e6dba-61de-749b-e94d-5d40ccb8ac3d",
+    "name" : "bullet_point",
+    "display_width" : null,
+    "label" : "Bullet point",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : 3,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Entfernen Sie unzulässige "
+  }, {
     "id" : "35e207d5-2987-7db2-9c09-50d3783de88e",
     "name" : "cta_field",
     "display_width" : null,
@@ -128,6 +146,7 @@
     "title" : "Beschleunigte Vertragsabschlüsse",
     "subtitle" : "Legartis befähigt auch Mitarbeitende im Sales, Verträge zu prüfen. Für mehr Deals in der gleichen Zeit.",
     "image_first" : true,
+    "bullet_point" : "Entfernen Sie unzulässige ",
     "cta_field" : "fcb77abb-2de9-428c-934c-39ed46278936"
   }
 }, {
@@ -213,4 +232,14 @@
     "color" : "#FFFFFF",
     "opacity" : 100
   }
+}, {
+  "id" : "ccc06c3e-2ece-9906-c9de-4ddf4bc7943a",
+  "name" : "order_nr",
+  "display_width" : null,
+  "label" : "Order nr",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
 } ]

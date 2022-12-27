@@ -1,0 +1,51 @@
+.threerevcont h1 {
+    display:flex;
+    justify-content: center;
+    color:white;
+    margin-bottom: 70px;
+    font-weight:600;
+}
+
+.aspas {
+    color: #d3d9f8;
+    display: block;
+    font-family: Montserrat;
+    font-size: 102px;
+    height: 90px;
+    margin-top: -20px;
+    position: relative;
+}
+.revcont {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 1400px;
+    width: 90%;
+    position: relative;
+    z-index: 5;
+}
+.revbox {
+    height: 320px;
+    width: 350px;
+    background-color: white;
+    padding: 23px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 20%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 20%);
+}
+span.name, span.jobtitle, span.unternehmen {
+    font-size: 16px;
+    font-weight:500;
+}
+.revtext div {
+    margin-bottom: 25px;
+}
+span.name {
+    font-weight: 600;
+}
+.threerevcont .bottomleft{
+margin-bottom:-70px;
+}
+.threerevcont .bottomright{
+    
+}

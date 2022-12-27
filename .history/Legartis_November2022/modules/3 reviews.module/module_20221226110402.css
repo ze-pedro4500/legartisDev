@@ -1,0 +1,41 @@
+.threerevcont h1 {
+    display:flex;
+    justify-content: center;
+    color:white;
+    margin-bottom: 70px;
+    font-weight:600;
+}
+.aspas {
+    color: #d3d9f8;
+    display: block;
+    font-family: Montserrat;
+    font-size: 102px;
+    height: 90px;
+    margin-top: -20px;
+    position: relative;
+}
+.revcont {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 1400px;
+    width: 90%;
+    position: relative;
+    z-index: 5;
+}
+.revbox {
+    height: 320px;
+    width: 350px;
+    background-color: white;
+    padding: 23px;
+}
+span.name, span.jobtitle, span.unternehmen {
+    font-size: 16px;
+    font-weight:500;
+}
+.revtext div {
+    margin-bottom: 25px;
+}
+span.name {
+    font-weight: 600;
+}

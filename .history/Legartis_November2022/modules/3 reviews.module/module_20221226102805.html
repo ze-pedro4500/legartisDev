@@ -1,0 +1,42 @@
+<link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+<div class="threerevcont">
+  <h1>
+  {% inline_text field="title" value="{{ module.title }}" %} <div class="underline">{% inline_text field="underline_title" value="{{ module.underline_title }}" %}</div>
+</h1>
+  <div class="revcont">
+    {% for item in module.reviewbox %}
+  <div class="revbox">
+  <span class="aspas">
+      "
+  </span>
+    <span class="revtext">
+    {% inline_text field="review" value="{{ item.review }}" %}
+    </span>
+    <span class="name">
+    {% inline_text field="assinatura" value="{{ item.assinatura }}" %}
+    </span>
+    <span class="jobtitle">
+    {% inline_text field="job_title" value="{{ item.job_title }}" %}
+    </span>
+    <span>
+    {% inline_text field="unternehmen" value="{{ item.unternehmen }}" %}
+    </span>
+    </div>
+{% endfor %}
+  </div>
+  <div class="bottomleft"></div>
+<div class="bottomright"></div>
+</div>
+<style>
+.underline{
+    border-bottom: 1px solid {{ module.underline_color.color }};
+    height: 60px;
+}
+.threerevcont {
+    background-color: {{ module.background_color.color }};
+    padding-top: 80px;
+}
+.revbox {
+    color: {{ module.background_color.color }};
+}
+</style>

@@ -1,0 +1,12 @@
+.threerevcont h1 {
+    display:flex;
+    justify-content: center;
+}
+.aspas {
+    font-family: "Montserrat";
+    font-size:102px;
+}
+.revbox {
+    width: 350px;
+    height: 320px;
+}
