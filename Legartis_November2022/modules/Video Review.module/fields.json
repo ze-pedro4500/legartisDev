@@ -1,10 +1,31 @@
 [ {
+  "id" : "2f460cd3-86c3-1d81-9ecf-e22bcae14348",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Wie Legartis-Kunden den Massstab für Vertragsprüfungen neu setzen"
+}, {
   "id" : "009d65a5-a6e1-6c17-3e0f-4303518e5447",
   "name" : "videoplayer_field",
   "display_width" : null,
   "label" : "Video",
   "required" : true,
   "locked" : false,
+  "visibility" : {
+    "controlling_field" : "f537de4f-1ee3-1cf4-c4da-ed412354c06c",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "1",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
   "resizable" : true,
   "show_preview" : true,
   "show_advanced_options" : false,
@@ -23,6 +44,15 @@
   "required" : true,
   "locked" : false,
   "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "f537de4f-1ee3-1cf4-c4da-ed412354c06c",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "1",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
   "allow_new_line" : false,
   "show_emoji_picker" : false,
   "type" : "text",
@@ -35,6 +65,15 @@
   "required" : false,
   "locked" : false,
   "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "f537de4f-1ee3-1cf4-c4da-ed412354c06c",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "1",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
   "allow_new_line" : false,
   "show_emoji_picker" : false,
   "type" : "text",
@@ -47,8 +86,144 @@
   "required" : false,
   "locked" : false,
   "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "f537de4f-1ee3-1cf4-c4da-ed412354c06c",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "1",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
   "allow_new_line" : false,
   "show_emoji_picker" : false,
   "type" : "text",
   "default" : "Company"
+}, {
+  "id" : "f537de4f-1ee3-1cf4-c4da-ed412354c06c",
+  "name" : "nr_of_videos",
+  "display_width" : null,
+  "label" : "nr of videos",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "1", "1" ], [ "2", "2" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "type" : "choice",
+  "default" : "1"
+}, {
+  "id" : "c3aafa4a-dd35-230a-43cf-ea50b985e9de",
+  "name" : "videogroup",
+  "display_width" : null,
+  "label" : "Videogroup",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : 2,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "visibility" : {
+    "controlling_field" : "f537de4f-1ee3-1cf4-c4da-ed412354c06c",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "2",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "a6c25c24-e65e-aedc-4108-85c56ce688ef",
+    "name" : "video_2rev",
+    "display_width" : null,
+    "label" : "Video",
+    "required" : true,
+    "locked" : false,
+    "resizable" : true,
+    "show_preview" : true,
+    "show_advanced_options" : false,
+    "type" : "videoplayer",
+    "default" : {
+      "player_id" : 96618467457,
+      "height" : 1514,
+      "width" : 2584,
+      "player_type" : "hsvideo2"
+    }
+  }, {
+    "id" : "2e901370-4c60-98e2-eb01-6c4d509223cf",
+    "name" : "name_group",
+    "display_width" : null,
+    "label" : "Name",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Dr. Marc Hansmann"
+  }, {
+    "id" : "e6308dd7-62da-4fbf-50ac-4f8e86fcabd2",
+    "name" : "job_title",
+    "display_width" : null,
+    "label" : "Job Title",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Job Title"
+  }, {
+    "id" : "f1f805a6-cca1-05a5-5cc5-17bf1292a26c",
+    "name" : "company",
+    "display_width" : null,
+    "label" : "Company",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Company"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "video_2rev" : {
+      "player_id" : 96618467457,
+      "height" : 1514,
+      "width" : 2584,
+      "player_type" : "hsvideo2"
+    },
+    "name_group" : "Dr. Marc Hansmann",
+    "job_title" : "Job Title",
+    "company" : "Company"
+  }
+}, {
+  "id" : "35f914c9-7320-784b-3f33-4a8dc478ea73",
+  "name" : "bgcolor1",
+  "display_width" : null,
+  "label" : "Bgcolor1",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "3a28a805-86ed-cd90-8346-9ae68b535d7a",
+  "name" : "bgcolor2",
+  "display_width" : null,
+  "label" : "Bgcolor2",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
 } ]

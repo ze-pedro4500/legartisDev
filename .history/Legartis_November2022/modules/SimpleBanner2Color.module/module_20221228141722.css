@@ -1,0 +1,27 @@
+.sbcont {
+    padding: 250px 10% 53px 10%;
+}
+.sbcont h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.sbcont h1 {
+    font-size: 41px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.sbcont span {
+    font-size: 18px;
+}
+.sbcont .bottomright {
+    height: 135px;
+    width: 110vw;
+    margin: 15px 0px -169px -251px;
+    transform: rotate(-12deg);
+}
+.sbcont .bottomleft {
+    height: 179px;
+    width: 110vw;
+    margin: 112px 1px -84px -267px;
+    transform: rotate(1deg);
+}

@@ -1,0 +1,59 @@
+<div class="slider-no-slide">
+ <div class="slider">
+ <div class="topleft"></div>
+<div class="topright"></div>
+ <!-- Additional required wrapper -->
+ <div class="slider-wrapper">
+     <div class="slide_content">
+     <div class="slider_text1">
+     <div class="title">
+     <h1>	{% inline_text field="big_title" value="{{ module.big_title }}" %}</h1><h3>{% inline_text field="text_field" value="{{ module.text_field }}" %}</h3>
+     </div>
+     
+       <h2>
+       {% inline_text field="subtitle" value="{{ module.subtitle }}" %}
+       
+       </h2>
+       <span>
+       {% inline_text field="slider_text" value="{{ module.slider_text }}" %}
+       </span>
+     </div>
+       <div class="slider_img1">
+       {% if module.image_field.src %}
+        {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+        {% if module.image_field.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.image_field.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+         {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+        <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+       </div>
+       
+     </div>
+ </div>
+</div>
+</div>
+  {% require_css %}
+  <style>
+    .slider-no-slide{
+      background-color:{{ module.bg_color1.color }}
+    }
+    .slider-no-slide h1, .slider-no-slide h2,.slider-no-slide h3, .slider-no-slide span {
+      color: {{ module.text_color.color }};
+    }
+    .slider-no-slide h1 {
+    border-bottom: 1px solid {{ module.underline_color.color }};
+    width: fit-content;
+}
+.slider-no-slide .topright {
+ background-color: {{ module.bg_color_2.color }};
+}
+.slider-no-slide .topleft {
+ background-color: {{ module.bg_color_2.color }};
+}
+
+  </style>
+  {% end_require_css %}
+  

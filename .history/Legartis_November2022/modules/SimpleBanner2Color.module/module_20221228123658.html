@@ -1,0 +1,15 @@
+<div class="sbcont">
+<h5>{% inline_text field="subtitle" value="{{ module.subtitle }}" %}</h5>
+<h1>{% inline_text field="title" value="{{ module.title }}" %}</h1>
+<span>{% inline_text field="text_field" value="{{ module.text_field }}" %}</span>
+    <div class="bottomleft"></div>
+    <div class="bottomright"></div>
+    </div>
+<style>
+.sbcont h5 {
+    color:{{ module.subtitle_color.color }};
+}
+.sbcont h1, .sbcont span {
+    color: {{ module.text_color.color }};
+}
+</style>

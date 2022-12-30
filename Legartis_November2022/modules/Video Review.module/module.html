@@ -1,4 +1,11 @@
+<div class="maincont">
+<div class="topleft"></div>
+<div class="topright"></div>
+  <h1>
+    {% inline_text field="title" value="{{ module.title }}" %}
+  </h1>
 <div class="vidrevcont">
+  {% if module.nr_of_videos == 1 %}
   <div class="col1">
     {% if module.videoplayer_field.player_id %}
   {% set max_width = module.videoplayer_field.size_type == 'auto_custom_max' ? module.videoplayer_field.max_width : module.videoplayer_field.width %}
@@ -26,5 +33,73 @@
       </span>
     </div>
   </div>
-  
+  {% else %}
+  {% for item in module.videogroup %}
+    {% if loop.index == 1 %}
+  <div class="col1 tv">  
+	{% if item.video_2rev.player_id %}
+	  {% set max_width = item.video_2rev.size_type == 'auto_custom_max' ? item.video_2rev.max_width : item.video_2rev.width %}
+	  {% set max_height = item.video_2rev.size_type == 'auto_custom_max' ? item.video_2rev.max_height : item.video_2rev.height %}
+	  {% video_player "embed_player"
+	    player_id={{ item.video_2rev.player_id }}
+	    type={{ item.video_2rev.player_type || 'scriptV4' }}
+	    full_width={{ item.video_2rev.size_type == 'auto_full_width' }},
+	    conversion_asset={{ item.video_2rev.conversion_asset|tojson|safe }}
+	    autoplay={{ item.video_2rev.autoplay }}
+	    hidden_controls={{ item.video_2rev.hide_controls }}
+	    loop={{ item.video_2rev.loop_video }}
+	    muted={{ item.video_2rev.mute_by_default }}
+	  %}
+	{% endif %}
+  <div class="txt">
+      <h4>
+      {% inline_text field="name_group" value="{{ item.name_group }}" %}
+      </h4>
+      <span>
+      {% inline_text field="job_title" value="{{ item.job_title }}" %}
+        {% inline_text field="company" value="{{ item.company }}" %}
+      </span>
+    </div>
+	
+	
+	
+    </div>
+    {% else %}
+      <div class="col2 tv">  
+	{% if item.video_2rev.player_id %}
+	  {% set max_width = item.video_2rev.size_type == 'auto_custom_max' ? item.video_2rev.max_width : item.video_2rev.width %}
+	  {% set max_height = item.video_2rev.size_type == 'auto_custom_max' ? item.video_2rev.max_height : item.video_2rev.height %}
+	  {% video_player "embed_player"
+	    player_id={{ item.video_2rev.player_id }}
+	    type={{ item.video_2rev.player_type || 'scriptV4' }}
+	    full_width={{ item.video_2rev.size_type == 'auto_full_width' }},
+	    conversion_asset={{ item.video_2rev.conversion_asset|tojson|safe }}
+	    autoplay={{ item.video_2rev.autoplay }}
+	    hidden_controls={{ item.video_2rev.hide_controls }}
+	    loop={{ item.video_2rev.loop_video }}
+	    muted={{ item.video_2rev.mute_by_default }}
+	  %}
+	{% endif %}
+  <div class="txt">
+      <h4>
+      {% inline_text field="name_group" value="{{ item.name_group }}" %}
+      </h4>
+      <span>
+      {% inline_text field="job_title" value="{{ item.job_title }}" %}
+        {% inline_text field="company" value="{{ item.company }}" %}
+      </span>
+    </div>
+    </div>
+    {% endif %}
+{% endfor %}
+  {% endif %}
 </div>
+</div>
+<style>
+.maincont {
+background-color: {{ module.bgcolor1.color }};
+}
+.topleft, .topright {
+  background-color: {{ module.bgcolor2.color }};
+}
+</style>

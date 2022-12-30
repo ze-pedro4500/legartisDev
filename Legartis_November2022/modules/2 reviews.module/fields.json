@@ -1,0 +1,128 @@
+[ {
+  "id" : "562eb607-7118-b8aa-b162-30e44ab77a54",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Was unsere Nutzer: innen meinen"
+}, {
+  "id" : "2371dd89-35b7-2fab-3757-48766eae4f2a",
+  "name" : "underline_title",
+  "display_width" : null,
+  "label" : "underline title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "innen meinen"
+}, {
+  "id" : "1bbebdf2-12e7-910c-a029-ab9426b9e3ad",
+  "name" : "underline_color",
+  "display_width" : null,
+  "label" : "underline color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FF0201",
+    "opacity" : 100
+  }
+}, {
+  "id" : "b19ca505-a18e-a6cc-5040-36981ea3ec64",
+  "name" : "reviewbox",
+  "display_width" : null,
+  "label" : "ReviewBox",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 2,
+    "max" : 2,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "745947eb-d6e9-4bac-c2d8-f822803d0d9a",
+    "name" : "review",
+    "display_width" : null,
+    "label" : "review",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Verkürzung der Verhandlungszeit: Mehr Deals in der gleichen Zeit. Top Tool. Mega mässig. Unglaublich in der Handhabung."
+  }, {
+    "id" : "586aa848-d8c6-f51f-ee37-e9b3ab2ef8f0",
+    "name" : "assinatura",
+    "display_width" : null,
+    "label" : "Assinatura",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "18f968fa-4bec-72e4-77ca-fa8ecf364b60",
+    "name" : "job_title",
+    "display_width" : null,
+    "label" : "Job title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "58cd2496-0290-80b0-4765-29a8293d31a7",
+    "name" : "unternehmen",
+    "display_width" : null,
+    "label" : "Unternehmen",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "review" : "Verkürzung der Verhandlungszeit: Mehr Deals in der gleichen Zeit. Top Tool. Mega mässig. Unglaublich in der Handhabung."
+  }, {
+    "review" : "Verkürzung der Verhandlungszeit: Mehr Deals in der gleichen Zeit. Top Tool. Mega mässig. Unglaublich in der Handhabung."
+  } ]
+}, {
+  "id" : "b4d84b95-0974-8a64-054b-c5ce25926aa1",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : null,
+    "opacity" : null
+  }
+}, {
+  "id" : "e6020540-811e-12d4-33fd-4faa9c5acc9d",
+  "name" : "background_color_2",
+  "display_width" : null,
+  "label" : "Background color 2",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#0600FF",
+    "opacity" : 100
+  }
+} ]

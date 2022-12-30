@@ -1,0 +1,85 @@
+[ {
+  "id" : "a1e3bfec-b78c-0ad1-deec-f4800be2853b",
+  "name" : "subtitle",
+  "display_width" : null,
+  "label" : "Subtitle",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "LEGARTIS TESTIMONIALS"
+}, {
+  "id" : "e55ede08-400a-f661-e549-d98549782316",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Die Stimmen unserer Kunden"
+}, {
+  "id" : "7f6b712a-265e-48cb-5016-1f4bb22a7af9",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Erfahren Sie, was unsere Nutzer:innen über Legartis berichten."
+}, {
+  "id" : "9cac8de8-0edd-4de4-d1d3-524fd6d77bed",
+  "name" : "subtitle_color",
+  "display_width" : null,
+  "label" : "Subtitle color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#EEEEEE",
+    "opacity" : 100
+  }
+}, {
+  "id" : "8f33bed9-321f-ea76-df7f-aab568b62b21",
+  "name" : "text_color",
+  "display_width" : null,
+  "label" : "Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "e5a2f6de-a492-e92a-9239-6b1d4f0f5c74",
+  "name" : "bg_color",
+  "display_width" : null,
+  "label" : "Bg Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#0600FF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "1df7dc14-c4ef-6123-ecf3-45aa96170bf8",
+  "name" : "bg_color_2",
+  "display_width" : null,
+  "label" : "Bg color 2",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+} ]

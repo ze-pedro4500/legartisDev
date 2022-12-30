@@ -1,0 +1,138 @@
+[ {
+  "id" : "4bdcbed2-235b-b0bc-f3e9-ccbb4d30ff50",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.legartis.ai/hubfs/cat.jpg",
+    "alt" : "cat",
+    "loading" : "lazy",
+    "width" : 620,
+    "height" : 372,
+    "max_width" : 620,
+    "max_height" : 372
+  }
+}, {
+  "id" : "7e24fdd7-5a58-0757-a8bb-94846e9d4d65",
+  "name" : "big_title",
+  "display_width" : null,
+  "label" : "Big title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Legartis ist sofort einsatzbereit"
+}, {
+  "id" : "6b69c4ae-299b-21fa-bb6c-f96658caeb77",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : " title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Title Example"
+}, {
+  "id" : "cf15508e-2967-a234-f8d4-1a9091b54ecd",
+  "name" : "subtitle",
+  "display_width" : null,
+  "label" : "subtitle",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Ringier DPA-Prüfung in der Rechtsabteilung"
+}, {
+  "id" : "b6c6c40f-4d09-c72f-2eb5-d84290492095",
+  "name" : "slider_text",
+  "display_width" : null,
+  "label" : "Slider_text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Legaris optimises cooperation between your legal department and other specialist departments in the company. This ensures greater speed and agility in the contract review process."
+}, {
+  "id" : "1c934b70-2311-1ca2-23ca-7a739665402f",
+  "name" : "underline_color",
+  "display_width" : null,
+  "label" : "underline color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FF0201",
+    "opacity" : 100
+  }
+}, {
+  "id" : "6690a3d9-500c-bb15-66ec-97656c9fd4c4",
+  "name" : "cta_field",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta"
+}, {
+  "id" : "53b4cb71-d15e-056c-195d-05c95455dc47",
+  "name" : "text_color",
+  "display_width" : null,
+  "label" : "text color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "087798c1-2f24-ceb7-d77b-807643469f1d",
+  "name" : "bg_color1",
+  "display_width" : null,
+  "label" : "Bg Color1",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#0600FF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "27fbb6c4-e476-eea8-828f-406225dbaa23",
+  "name" : "bg_color_2",
+  "display_width" : null,
+  "label" : "Bg Color 2",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "0bc8b754-179f-78f8-a0d3-c2a6e5b20436",
+  "name" : "ctacolor",
+  "display_width" : null,
+  "label" : "ctaColor",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FF0201",
+    "opacity" : 100
+  }
+} ]

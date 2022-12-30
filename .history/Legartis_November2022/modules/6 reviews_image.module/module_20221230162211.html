@@ -1,0 +1,116 @@
+<div class="sexrevcont">
+  <h1>
+    {% inline_text field="title" value="{{ module.title }}" %} <div class="underline">{% inline_text
+      field="underline_title" value="{{ module.underline_title }}" %}</div>
+  </h1>
+
+ 
+    <div class="topcont">
+      <div class="revcont">
+      {% for item in module.topcont.reviewbox %}
+      <div class="revbox grow">
+
+        <div class="txtimgcont">
+          <div class="imgcont">
+            {% if item.image_field.src %}
+            {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+            {% if item.image_field.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"
+            style="max-width: 100%; height: auto;"' %}
+            {% elif item.image_field.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}"
+            style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' :
+            '' %}
+            <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <div class="singbox">
+            <span class="sign">
+              {% inline_text field="assinatura" value="{{ item.assinatura }}" %}
+            </span>
+            <span class="nosign">{% inline_text field="job_title" value="{{ item.job_title }}" %}</span>
+            <span class="nosign">{% inline_text field="unternehmen" value="{{ item.unternehmen }}" %}</span>
+          </div>
+        </div>
+        <div class="reviewcont">
+          <span class="review t" >{% inline_text field="title_review" value="{{ item.title_review }}" %}</span>
+          <span class="review">{% inline_text field="review" value="{{ item.review }}" %}</span>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+    </div>
+
+    <div class="bottomcont">
+      <div class="revcont">
+      {% for item in module.bottomcont.reviewbox %}
+      <div class="revbox grow">
+
+        <div class="txtimgcont">
+          <div class="imgcont">
+            {% if item.image_field.src %}
+            {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+            {% if item.image_field.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"
+            style="max-width: 100%; height: auto;"' %}
+            {% elif item.image_field.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}"
+            style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' :
+            '' %}
+            <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <div class="singbox">
+            <span class="sign">
+            {% inline_text field="assinatura" value="{{ item.assinatura }}" %}
+            </span>
+            <span class="nosign">{% inline_text field="job_title" value="{{ item.job_title }}" %}</span>
+            <span class="nosign">{% inline_text field="unternehmen" value="{{ item.unternehmen }}" %}</span>
+          </div>
+        </div>
+        <div class="reviewcont">
+          <span class="review t">{% inline_text field="title_review" value="{{ item.title_review }}" %}</span>
+          <span class="review">{% inline_text field="review" value="{{ item.review }}" %}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="bottomleft"></div>
+<div class="bottomright"></div>
+</div>
+<style>
+
+  .sexrevcont {
+    background-color: {{ module.background_color_2.color }}
+  }
+
+  .revbox {
+    color: {
+        {
+        module.background_color.color
+      }
+    }
+
+    ;
+    border-radius: 25px;
+  }
+
+  span.revtext {
+    font-size: 18px;
+    font-weight: 600;
+
+    color: {
+        {
+        module.background_color.color
+      }
+    }
+
+    ;
+  }
+</style>

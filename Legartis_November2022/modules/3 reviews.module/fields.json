@@ -1,4 +1,15 @@
 [ {
+  "id" : "9a55acd2-18ce-f7d2-61f0-ba264973cf51",
+  "name" : "id_3review",
+  "display_width" : null,
+  "label" : "ID",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number",
+  "default" : 1
+}, {
   "id" : "562eb607-7118-b8aa-b162-30e44ab77a54",
   "name" : "title",
   "display_width" : null,

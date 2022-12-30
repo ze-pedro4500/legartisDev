@@ -328,4 +328,16 @@
     "color" : "#FFFFFF",
     "opacity" : 100
   }
+}, {
+  "id" : "1dc1729d-8b98-7198-a7b5-98d96c2fdd5e",
+  "name" : "cta_color",
+  "display_width" : null,
+  "label" : "cta color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FF0201",
+    "opacity" : 100
+  }
 } ]

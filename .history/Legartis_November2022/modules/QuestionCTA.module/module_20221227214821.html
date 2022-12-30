@@ -1,0 +1,48 @@
+<div class="qctacont">
+  {% if module.design == 1 %}
+<div class="wsq"></div>
+  <div class="topleft"></div>
+<div class="topright"></div>
+  <div class="txtcta">
+    <h2>
+      {% inline_text field="question" value="{{ module.question }}" %}
+    </h2>
+    {% cta guid="{{ module.cta_field }}" %}
+  </div>
+  {% else %}
+    <div class="qctcontainer">
+  <div class="txtcta">
+    <h2>
+      {% inline_text field="question" value="{{ module.question }}" %}
+    </h2>
+    {% cta guid="{{ module.cta_field }}" %}
+  </div>
+  </div>
+  {% endif %}
+</div>
+<style>
+{% if module.design == 1 %}
+.qctacont span.hs-cta-node {
+    background-color: {{ module.cta_color.color }};
+    }
+.qctacont{
+      background-color: {{ module.bg_color1.color }};
+}
+.topright, .topleft {
+background-color: {{ module.bg_color2.color }};
+}
+{% else %}
+  .qctacont h2 {
+    color: {{ module.text_color.color }};
+  }
+  .qctcontainer {
+    border: 2px solid {{ module.border_color.color }};
+  }
+  .txtcta span.hs-cta-wrapper {
+    background-color:{{ module.cta_color.color }};
+    height: 40px;
+    width: fit-content;
+    border-radius: 11px;
+  }
+{% endif %}
+</style>

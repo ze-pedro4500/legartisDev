@@ -1,0 +1,51 @@
+<div class="vidrevcont">
+  {% if module.nr_of_videos == 1 %}
+  <div class="col1">
+    {% if module.videoplayer_field.player_id %}
+  {% set max_width = module.videoplayer_field.size_type == 'auto_custom_max' ? module.videoplayer_field.max_width : module.videoplayer_field.width %}
+  {% set max_height = module.videoplayer_field.size_type == 'auto_custom_max' ? module.videoplayer_field.max_height : module.videoplayer_field.height %}
+  {% video_player "embed_player"
+    player_id={{ module.videoplayer_field.player_id }}
+    type={{ module.videoplayer_field.player_type || 'scriptV4' }}
+    full_width={{ module.videoplayer_field.size_type == 'auto_full_width' }},
+    conversion_asset={{ module.videoplayer_field.conversion_asset|tojson|safe }}
+    autoplay={{ module.videoplayer_field.autoplay }}
+    hidden_controls={{ module.videoplayer_field.hide_controls }}
+    loop={{ module.videoplayer_field.loop_video }}
+    muted={{ module.videoplayer_field.mute_by_default }}
+  %}
+{% endif %}
+  </div>
+  <div class="col2">
+    <div class="txt">
+      <h4>
+        {% inline_text field="name_review" value="{{ module.name_review }}" %}
+      </h4>
+      <span>
+        {% inline_text field="job_title" value="{{ module.job_title }}" %}
+        {% inline_text field="company" value="{{ module.company }}" %}
+      </span>
+    </div>
+  </div>
+  {% else %}
+  {% for item in module.videogroup %}
+	{% if item.video_2rev.player_id %}
+	  {% set max_width = item.video_2rev.size_type == 'auto_custom_max' ? item.video_2rev.max_width : item.video_2rev.width %}
+	  {% set max_height = item.video_2rev.size_type == 'auto_custom_max' ? item.video_2rev.max_height : item.video_2rev.height %}
+	  {% video_player "embed_player"
+	    player_id={{ item.video_2rev.player_id }}
+	    type={{ item.video_2rev.player_type || 'scriptV4' }}
+	    full_width={{ item.video_2rev.size_type == 'auto_full_width' }},
+	    conversion_asset={{ item.video_2rev.conversion_asset|tojson|safe }}
+	    autoplay={{ item.video_2rev.autoplay }}
+	    hidden_controls={{ item.video_2rev.hide_controls }}
+	    loop={{ item.video_2rev.loop_video }}
+	    muted={{ item.video_2rev.mute_by_default }}
+	  %}
+	{% endif %}
+	{% inline_text field="name_group" value="{{ item.name_group }}" %}
+	{% inline_text field="job_title" value="{{ item.job_title }}" %}
+	{% inline_text field="company" value="{{ item.company }}" %}
+{% endfor %}
+  {% endif %}
+</div>

@@ -1,0 +1,78 @@
+<!--
+templateType: none
+-->
+<!doctype html>
+<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+  <head>
+  {{ require_js("https://code.jquery.com/jquery-3.3.1.min.js", { position: "footer" }) }}
+  {{ require_js("https://code.jquery.com/jquery-migrate-1.4.1.min.js", { position: "footer" }) }}
+
+    <meta charset="utf-8">
+    {% if page_meta.html_title %}<title>{{ page_meta.html_title }}</title>{% endif %}
+    {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+    <meta name="description" content="{{ page_meta.meta_description }}">
+    
+    {# This is intended to be used if a template requires template specific style sheets #}
+    {% if template_css %}
+    {{ require_css(get_asset_url(template_css)) }}
+    {% endif %}
+
+
+  
+    {# To see a full list of what is included via standard_header_includes please reference this article: https://developers.hubspot.com/docs/cms/hubl/variables#required-page-template-variables #}
+    {{ standard_header_includes }}
+  </head>
+  <body>
+    <div class="body-wrapper {{ builtin_body_classes }}">
+      {% block header %}
+      {% global_partial path='../partials/header.html' %}
+      {% endblock header %}
+
+      {% block body %}
+      {% endblock body %}
+
+      {% block footer %}
+      {% global_partial path='../partials/footer.html' %}
+      {% endblock footer %}
+    </div>
+
+
+    {{ require_js(get_asset_url('../../js/main.js')) }}
+    <script>
+       
+//  $(document).ready(function() {  
+// $(function(){
+//   var ron = localStorage.getItem('name', 'new_user');
+//  //debugger;
+//   if(ron != 'new_user'){
+//   localStorage.setItem('name', 'new_user');
+// 	var userLang = navigator.language || navigator.userLanguage; 
+// 	if(userLang.indexOf('de') >= 0) {
+// 	localStorage.setItem('language_redirect', 'de');
+//     var data_user_de = localStorage.getItem('language_redirect');
+// 		if(hsVars.language != 'de') {
+// 			window.location.href=$('.lang_switcher_link[data-language="de"]:visible').attr('href');
+// 		}
+// 	} else {
+// localStorage.setItem('language_redirect', 'en');
+//    var data_user_en = localStorage.setItem('language_redirect', 'en');
+// 		if(hsVars.language != 'en') {
+// 			window.location.href=$('.lang_switcher_link[data-language="en"]:visible').attr('href');
+// 		}
+// 	}
+//     }
+// });
+//    });
+    </script> 
+    
+    {# To see a full list of what is included via standard_footer_includes please reference this article: https://developers.hubspot.com/docs/cms/hubl/variables#required-page-template-variables #}
+    {{ standard_footer_includes }}
+    {{ require_css(get_asset_url("../../css/theme-overrides.css") , {media:screen}) }}
+    {{ require_css(get_asset_url("../../css/Style_2021.css"), {media:screen}) }}
+  </body>
+</html>
+<style>
+*{
+border: 1px solid black;
+}
+</style>
